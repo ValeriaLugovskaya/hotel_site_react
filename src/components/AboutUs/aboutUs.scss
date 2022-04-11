@@ -1,0 +1,34 @@
+.wrapper{
+  
+    margin:200px 10% 100px 10%;
+    
+    
+}
+
+
+.info{
+    
+}
+
+.info_element{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 100px 100px;
+    gap: 20px;
+    place-items: center;
+}
+
+.info_content_text{
+   
+}
+
+.info_content_img1 img{
+width:200px; 
+ 
+}
+
+
+.info_content_img img{
+    width:200px; 
+     
+    }

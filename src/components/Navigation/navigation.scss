@@ -1,0 +1,31 @@
+
+.NavigationBlock{
+   
+    padding-top: 6px;
+    padding-right: 3%;
+    height: 35px;
+    text-align: right;
+    background:   url('../../resources/img/a6.jpg') rgba(3, 25, 74, 0.2);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    & li{
+        display: inline-block;
+        font-size: 20px;
+        color:aliceblue;
+        margin: 0 0 0 24px;
+        /* &:after{
+            content: "\00a0 | \00a0";
+        } */
+        & :hover, :active{
+            transition-duration: .3s;
+            font-size:20.5px;
+            color:rgb(161, 196, 217);
+            text-decoration: underline;
+        }
+    }
+        
+}
+
+
