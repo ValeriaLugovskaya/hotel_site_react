@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/hotel_site_react/static/css/main.1a130776.chunk.css",
-    "main.js": "/hotel_site_react/static/js/main.b700c1a7.chunk.js",
-    "main.js.map": "/hotel_site_react/static/js/main.b700c1a7.chunk.js.map",
+    "main.css": "/hotel_site_react/static/css/main.551f5a60.chunk.css",
+    "main.js": "/hotel_site_react/static/js/main.a3965157.chunk.js",
+    "main.js.map": "/hotel_site_react/static/js/main.a3965157.chunk.js.map",
     "runtime-main.js": "/hotel_site_react/static/js/runtime-main.62d8dd61.js",
     "runtime-main.js.map": "/hotel_site_react/static/js/runtime-main.62d8dd61.js.map",
-    "static/js/2.a4ac6430.chunk.js": "/hotel_site_react/static/js/2.a4ac6430.chunk.js",
-    "static/js/2.a4ac6430.chunk.js.map": "/hotel_site_react/static/js/2.a4ac6430.chunk.js.map",
+    "static/js/2.9b97b807.chunk.js": "/hotel_site_react/static/js/2.9b97b807.chunk.js",
+    "static/js/2.9b97b807.chunk.js.map": "/hotel_site_react/static/js/2.9b97b807.chunk.js.map",
     "index.html": "/hotel_site_react/index.html",
-    "static/css/main.1a130776.chunk.css.map": "/hotel_site_react/static/css/main.1a130776.chunk.css.map",
-    "static/js/2.a4ac6430.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.a4ac6430.chunk.js.LICENSE.txt",
-    "static/media/navigation.scss": "/hotel_site_react/static/media/a6.d5351150.jpg",
+    "static/css/main.551f5a60.chunk.css.map": "/hotel_site_react/static/css/main.551f5a60.chunk.css.map",
+    "static/js/2.9b97b807.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.9b97b807.chunk.js.LICENSE.txt",
+    "static/media/bookingRooms.scss": "/hotel_site_react/static/media/bookingRooms_img.d7f1c7f4.jpg",
+    "static/media/navigation.scss": "/hotel_site_react/static/media/les_paradise.f0a86993.jpg",
+    "static/media/m.795aade0.jpg": "/hotel_site_react/static/media/m.795aade0.jpg",
     "static/media/main1.f65fb27b.jpg": "/hotel_site_react/static/media/main1.f65fb27b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.62d8dd61.js",
-    "static/js/2.a4ac6430.chunk.js",
-    "static/css/main.1a130776.chunk.css",
-    "static/js/main.b700c1a7.chunk.js"
+    "static/js/2.9b97b807.chunk.js",
+    "static/css/main.551f5a60.chunk.css",
+    "static/js/main.a3965157.chunk.js"
   ]
 }
