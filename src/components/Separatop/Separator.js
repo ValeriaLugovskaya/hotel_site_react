@@ -1,18 +1,18 @@
-import './separator.scss';
+import './separatorPage.scss';
 
-const Separator =() =>{
+const SeparatorPage =() =>{
 
     return(
 
         <>
         <div className="block_separator">
-            <div className="block_separator_blue"></div>
-            <div className="block_separator icons">
-
+            <div className="block_separator_blue">
+                <div className="block_separator icons">
+                </div>
             </div>
         </div>
         </>
     )
 }
 
-export default Separator;
+export default SeparatorPage;

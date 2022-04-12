@@ -1,11 +1,12 @@
+@import "../../style/variables.scss";
 
 .NavigationBlock{
    
     padding-top: 6px;
     padding-right: 3%;
-    height: 35px;
+    height: 47px;
     text-align: right;
-    background:   url('../../resources/img/a6.jpg') rgba(3, 25, 74, 0.2);
+    background:   url('../../resources/img/les_paradise.jpg') $img-filter;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,7 +22,7 @@
         & :hover, :active{
             transition-duration: .3s;
             font-size:20.5px;
-            color:rgb(161, 196, 217);
+            color: rgb(153, 230, 239);
             text-decoration: underline;
         }
     }

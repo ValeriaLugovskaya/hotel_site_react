@@ -1,0 +1,40 @@
+
+@import  '../../style/variables';
+
+
+
+.book_block{
+        display: flex;
+        justify-content: space-around;
+        background: url('../../resources/img/bookingRooms_img.jpg') rgba(70, 112, 179, 0.6);
+        background-size:cover;
+        background-repeat: no-repeat;
+    background-blend-mode: multiply;
+        height: 800px;
+        align-items: center;
+    &_textcontent{
+        order:2;
+        width: 20%;  
+    }
+    &_form{  
+        width: 20%;
+        font-size: large;
+        color: $font; 
+    }
+
+}
+
+.textcontent{
+    padding: 20%;
+    margin-bottom: 10%;
+    &_title{
+        font-size: 30px;
+        color: $font;       
+    }
+    &_text{
+        color:$font;
+    }
+}
+
+
+

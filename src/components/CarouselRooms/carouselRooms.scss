@@ -1,0 +1,19 @@
+
+
+.block_rooms{
+ display:flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: space-around;
+ margin: 50px;
+    &_img {
+        width: 40%;
+    }
+    &img{
+        background-size: cover;
+    }
+}
+
+.block_rooms_text_content{
+  padding:25px;
+}

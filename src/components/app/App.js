@@ -1,17 +1,24 @@
 import MainPage from "../MainPage/MainPage";
 import Navigation from "../Navigation/Navigation";
-import Separator from "../Separatop/Separator";
+import SeparatorPage from "../Separatop/Separator";
 import AboutUs from "../AboutUs/AboutUs";
+import CarouselRooms from "../CarouselRooms/CarouselRooms";
+import BookingRooms from "../Booking/BookingRooms";
+import Footer from "../Footer/Footer";
+import './App.scss';
 
 const App = () => {
     return (
         <div className="app">
            <Navigation/>
            <MainPage />
-           <div className="separator_app">
-               <Separator/>
+           <div>
+               <SeparatorPage/>
            </div>
            <AboutUs/>
+        <CarouselRooms/> 
+        <BookingRooms/>
+        <Footer/>
         </div>
     );
 }

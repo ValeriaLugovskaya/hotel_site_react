@@ -1,4 +1,4 @@
-
+@import "../../style/variables.scss";
 
 .block_separator_blue{
     position:relative;
@@ -7,5 +7,6 @@
     margin: -40px 20% auto auto;
     border: 1px solid;
     border-radius: 10px;
-    background-color: rgb(105, 140, 200);
+    background-color: $main-color;
 }
+

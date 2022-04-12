@@ -1,6 +1,7 @@
 import './aboutUs.scss';
 import aboutUs_img from '../../resources/img/main1.jpg';
 
+
 const AboutUs = () =>{
 
     return(
