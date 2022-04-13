@@ -17,3 +17,13 @@
 .block_rooms_text_content{
   padding:25px;
 }
+
+
+@media (max-width: 459px) {
+    .block_rooms{
+        flex-wrap:wrap;
+    &_img {
+        width: 100%;
+    }
+}
+}

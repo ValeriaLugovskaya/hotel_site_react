@@ -37,4 +37,39 @@
 }
 
 
+@media (max-width: 459px) {
+    .book_block{
+        flex-direction: column-reverse;
+        align-items:flex-end;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 100%;    
+        &_form{ 
+            width: 80%;
+            &label{
+                text-align: center;
+            }
+        }    
+        &_textcontent{
+            padding: 5% 15%;
+            align-self: center;
+            width: 100%;
+        }
+
+    }
+    .textcontent{
+        padding:0;
+        margin:0;
+        
+        &_text{
+            display:none;
+        }
+    }
+
+    label{
+        text-align: center;
+        width:80%;
+        padding: 0 10%;
+    }
+}
 

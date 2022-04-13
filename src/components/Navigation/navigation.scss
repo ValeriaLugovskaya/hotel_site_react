@@ -11,6 +11,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    transition-property: text-decoration;
     & li{
         display: inline-block;
         font-size: 20px;
@@ -20,9 +21,8 @@
             content: "\00a0 | \00a0";
         } */
         & :hover, :active{
-            transition-duration: .3s;
-            font-size:20.5px;
-            color: rgb(153, 230, 239);
+            transition-duration: 0.4s;
+            color: rgba(153, 230, 239);
             text-decoration: underline;
         }
     }

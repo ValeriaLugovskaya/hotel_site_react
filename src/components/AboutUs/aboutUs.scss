@@ -32,3 +32,15 @@ width:200px;
     width:200px; 
      
     }
+
+
+@media (max-width: 459px) {
+    .info_element{
+        gap: 35px;
+    grid-template-columns: 100%;
+}
+.info_content_img1{
+    visibility: hidden;
+
+}
+}
