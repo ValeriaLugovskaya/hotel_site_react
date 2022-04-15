@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hotel_site_react/static/css/main.b1041933.chunk.css",
+    "main.css": "/hotel_site_react/static/css/main.bd879636.chunk.css",
     "main.js": "/hotel_site_react/static/js/main.a6401931.chunk.js",
     "main.js.map": "/hotel_site_react/static/js/main.a6401931.chunk.js.map",
     "runtime-main.js": "/hotel_site_react/static/js/runtime-main.62d8dd61.js",
@@ -8,7 +8,7 @@
     "static/js/2.9b97b807.chunk.js": "/hotel_site_react/static/js/2.9b97b807.chunk.js",
     "static/js/2.9b97b807.chunk.js.map": "/hotel_site_react/static/js/2.9b97b807.chunk.js.map",
     "index.html": "/hotel_site_react/index.html",
-    "static/css/main.b1041933.chunk.css.map": "/hotel_site_react/static/css/main.b1041933.chunk.css.map",
+    "static/css/main.bd879636.chunk.css.map": "/hotel_site_react/static/css/main.bd879636.chunk.css.map",
     "static/js/2.9b97b807.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.9b97b807.chunk.js.LICENSE.txt",
     "static/media/bookingRooms.scss": "/hotel_site_react/static/media/bookingRooms_img.d7f1c7f4.jpg",
     "static/media/navigation.scss": "/hotel_site_react/static/media/upper_button.a23788b5.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.62d8dd61.js",
     "static/js/2.9b97b807.chunk.js",
-    "static/css/main.b1041933.chunk.css",
+    "static/css/main.bd879636.chunk.css",
     "static/js/main.a6401931.chunk.js"
   ]
 }
