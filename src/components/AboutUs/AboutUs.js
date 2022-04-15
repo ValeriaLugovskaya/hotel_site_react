@@ -6,44 +6,62 @@ const AboutUs = () =>{
 
     return(
         <>
-        <div className="wrapper">
+        <div className="wrapper" id = "aboutus">
             <div className="info">
                 <div className="info_content">
-                    <div className="info_element">
-                        <div className="info_content_text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                    <h2 className="info_contetnt_title">О нас</h2>
+                <div className="info_element">
+                        
+                        
+                        
+                        <p className="info_content_text">    <img src = {aboutUs_img} alt = 'sads'  className = 'rigth'/>
+                        <div className="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
                             ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
                             ipsam cumque ipsum accusamus veritatis soluta dolores impedit
-                            consequuntur aspernatur perspiciatis autem.
-                        </div>
-                        <div className="info_content_img">
-                            <img src = {aboutUs_img} alt = 'sads'/>
-                        </div>
+                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
+                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
+                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
+                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
+                            consequuntur aspernatur perspiciatis autem.</div>
+                        </p>
             </div>
 
                     <div className="info_element">
-                        <div className="info_content_img1">
-                            <img src = {aboutUs_img} alt = 'sads'/>
-                        </div>
-                        <div className="info_content_text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                        
+                        
+                        
+                        <p className="info_content_text">    <img src = {aboutUs_img} alt = 'sads' className = 'left'/>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
+                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
+                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
+                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
+                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
                             ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
                             ipsam cumque ipsum accusamus veritatis soluta dolores impedit
                             consequuntur aspernatur perspiciatis autem.
-                        </div>
+                        </p>
             </div>
 
             <div className="info_element">
-                <div className="info_content_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
-                    ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
-                    ipsam cumque ipsum accusamus veritatis soluta dolores impedit
-                    consequuntur aspernatur perspiciatis autem.
-                </div>
-                
-                <div className="info_content_img">
-                <img src = {aboutUs_img} alt = 'sads'/>
-                </div>
+                        
+                        
+                        
+                        <p className="info_content_text">    <img src = {aboutUs_img} alt = 'sads'  className ='rigth'/>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
+                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
+                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
+                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
+                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
+                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
+                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
+                            consequuntur aspernatur perspiciatis autem.
+                        </p>
             </div>
         </div>
     </div>

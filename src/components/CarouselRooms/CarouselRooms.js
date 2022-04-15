@@ -9,6 +9,9 @@ const CarouselRooms = () =>{
   return(
 
     <div className="block_wr">
+      <h5 className="carousel_title">
+        Выберите номер
+      </h5>
       <div className="block_rooms">
         <div className="block_rooms_img">
           <Carousel>
@@ -35,15 +38,15 @@ const CarouselRooms = () =>{
         </Carousel>
       </div>
 
-      <div className="block_rooms_text_content">
-          <h5 className="title_content title">
+     { <div className="block_rooms_text_content">
+          <h6 className="title_content title">
               Номер с балконом
-          </h5>
+          </h6>
           <p className="text_content description">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br/>Ea sunt ab provident odio ullam. 
               Ea doloribus nulla reprehenderit odio voluptas at tempore<br/> velit? Atque alias quidem praesentium aperiam iure perspiciatis.
           </p>
-      </div>
+      </div> }
     </div>
   </div>
 )

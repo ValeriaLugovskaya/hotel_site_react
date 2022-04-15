@@ -1,11 +1,27 @@
 @import "../../style/variables.scss";
 
+
+#upper{
+    position:fixed;
+    z-index: 50;
+    top: 90%;
+    left: 90%;
+    border:0;
+    width: 80px;
+    height: 40px;
+    background: url('../../resources/svg/upper_button.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
 .NavigationBlock{
-   
-    padding-top: 6px;
-    padding-right: 3%;
-    height: 47px;
-    text-align: right;
+  /*   position:fixed;
+    z-index: 10;
+    top:0; left:0; */
+    width:100%;
+    text-align: end;
     background:   url('../../resources/img/les_paradise.jpg') $img-filter;
     -webkit-background-size: cover;
     background-size: cover;
@@ -16,7 +32,8 @@
         display: inline-block;
         font-size: 20px;
         color:aliceblue;
-        margin: 0 0 0 24px;
+        margin: 0 10px 0 24px;
+        right:10%;
         /* &:after{
             content: "\00a0 | \00a0";
         } */
@@ -27,6 +44,22 @@
         }
     }
         
+}
+
+@media (max-width: 459px) {
+    .NavigationBlock{
+        text-align: center;
+        & li{
+            display: inline-block;
+            font-size: 20px;
+            color:aliceblue;
+            margin: 0;
+            &::after{
+                content: "\00a0 \00a0";
+            }
+        }
+
+    }
 }
 
 

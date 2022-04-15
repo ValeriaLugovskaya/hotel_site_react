@@ -1,9 +1,27 @@
 @import "../../style/variables.scss";
 
 .footer_block{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width:100%;
-    height: 250px;
+    align-items: center;
+    height: fit-content;
     background-color: $main-color;
+    color: $font;
     padding:0;
     margin:0;
+    
+}
+
+@media (max-width: 580px) {
+    .footer_block_map{
+        order:1;
+    }
+    
+    iframe{
+        width:80%;
+        height: fit-content;
+        margin:5% 10% 0 10%;
+    }
 }

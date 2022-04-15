@@ -39,16 +39,16 @@ class BookingRooms extends Component{
     render(){
         const {firstName, lastName, middleName, phone, startDate, lastDate} = this.state;
      return(
-        <div className="book_block">
-
+        <div className="book_block" id = "booking">
+            
             <div className="book_block_textcontent">
-                <h4 className="textcontent_title">
+            <h4 className="textcontent_title">
                     Забронировать номер
-                </h4>
+                </h4>    
                 <p className="textcontent_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                     temporibus fugit, facilis voluptas autem quia fuga impedit similique
-                      voluptatibus quaerat fugiat quas quod reprehenderit maiores pariatur
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,<br/>
+                     temporibus fugit, facilis voluptas autem quia fuga impedit similique<br/>
+                      voluptatibus quaerat fugiat quas quod reprehenderit<br/> maiores pariatur
                        excepturi culpa, numquam tempora?
                 </p>
             </div>
@@ -92,7 +92,7 @@ class BookingRooms extends Component{
                         
                             <input 
                                 type="date"
-                                className="form-control new-post-label"
+                                className="form-control"
                                 placeholder="Дата заезда"
                                 name="startDate"
                                 value={startDate} 
@@ -119,10 +119,14 @@ class BookingRooms extends Component{
                                 name = "phone"
                                 onChange={this.onValueChange}>
                             </InputMask>
+                        
+                            <button type="submit" onClick={ e => this.onSubmit(e) }
+                           className="book_block_btn">Добавить</button>
                         </label>   
-                    </fieldset>         
-            <button type="submit" onClick={ e => this.onSubmit(e) }
-            className="btn btn-outline-dark">Добавить</button>   
+                           
+                    </fieldset>  
+                           <br/>
+           
         </form>
     </div>
     
