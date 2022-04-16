@@ -17,8 +17,10 @@ const App = () => {
                <SeparatorPage/>
            </div>
            <AboutUs/>
+           
         <CarouselRooms/> 
         <BookingRooms/>
+
         <Footer/>
         </div>
     );

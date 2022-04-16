@@ -5,7 +5,7 @@ import aboutUs_img from '../../resources/img/main1.jpg';
 const AboutUs = () =>{
 
     return(
-        <>
+        <div className = "color_wrapper">
         <div className="wrapper" id = "aboutus">
             <div className="info">
                 <div className="info_content">
@@ -66,7 +66,7 @@ const AboutUs = () =>{
         </div>
     </div>
 </div>
-        </>
+        </div>
     )
 }
 

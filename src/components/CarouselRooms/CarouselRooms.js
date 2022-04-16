@@ -9,6 +9,7 @@ const CarouselRooms = () =>{
   return(
 
     <div className="block_wr">
+      
       <h5 className="carousel_title">
         Выберите номер
       </h5>

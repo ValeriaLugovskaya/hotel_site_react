@@ -42,6 +42,7 @@ class BookingRooms extends Component{
         <div className="book_block" id = "booking">
             
             <div className="book_block_textcontent">
+            
             <h4 className="textcontent_title">
                     Забронировать номер
                 </h4>    
