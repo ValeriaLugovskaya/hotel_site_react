@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hotel_site_react/static/css/main.1800d17e.chunk.css",
-    "main.js": "/hotel_site_react/static/js/main.5d1d24e0.chunk.js",
-    "main.js.map": "/hotel_site_react/static/js/main.5d1d24e0.chunk.js.map",
+    "main.css": "/hotel_site_react/static/css/main.d7d4e0b7.chunk.css",
+    "main.js": "/hotel_site_react/static/js/main.6bbcc260.chunk.js",
+    "main.js.map": "/hotel_site_react/static/js/main.6bbcc260.chunk.js.map",
     "runtime-main.js": "/hotel_site_react/static/js/runtime-main.62d8dd61.js",
     "runtime-main.js.map": "/hotel_site_react/static/js/runtime-main.62d8dd61.js.map",
-    "static/js/2.9b97b807.chunk.js": "/hotel_site_react/static/js/2.9b97b807.chunk.js",
-    "static/js/2.9b97b807.chunk.js.map": "/hotel_site_react/static/js/2.9b97b807.chunk.js.map",
+    "static/js/2.9d9572ae.chunk.js": "/hotel_site_react/static/js/2.9d9572ae.chunk.js",
+    "static/js/2.9d9572ae.chunk.js.map": "/hotel_site_react/static/js/2.9d9572ae.chunk.js.map",
     "index.html": "/hotel_site_react/index.html",
-    "static/css/main.1800d17e.chunk.css.map": "/hotel_site_react/static/css/main.1800d17e.chunk.css.map",
-    "static/js/2.9b97b807.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.9b97b807.chunk.js.LICENSE.txt",
+    "static/css/main.d7d4e0b7.chunk.css.map": "/hotel_site_react/static/css/main.d7d4e0b7.chunk.css.map",
+    "static/js/2.9d9572ae.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.9d9572ae.chunk.js.LICENSE.txt",
     "static/media/bookingRooms.scss": "/hotel_site_react/static/media/bookingRooms_img.d7f1c7f4.jpg",
     "static/media/mainPage.scss": "/hotel_site_react/static/media/les_paradise.f0a86993.jpg",
     "static/media/m.795aade0.jpg": "/hotel_site_react/static/media/m.795aade0.jpg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.62d8dd61.js",
-    "static/js/2.9b97b807.chunk.js",
-    "static/css/main.1800d17e.chunk.css",
-    "static/js/main.5d1d24e0.chunk.js"
+    "static/js/2.9d9572ae.chunk.js",
+    "static/css/main.d7d4e0b7.chunk.css",
+    "static/js/main.6bbcc260.chunk.js"
   ]
 }
