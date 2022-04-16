@@ -10,7 +10,7 @@ const CarouselRooms = () =>{
 
     <div className="block_wr">
       
-      <h5 className="carousel_title">
+      <h5 className="carousel_title" id = "carousel-rooms">
         Выберите номер
       </h5>
       <div className="block_rooms">

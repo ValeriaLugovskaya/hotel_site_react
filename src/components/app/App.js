@@ -5,13 +5,16 @@ import AboutUs from "../AboutUs/AboutUs";
 import CarouselRooms from "../CarouselRooms/CarouselRooms";
 import BookingRooms from "../Booking/BookingRooms";
 import Footer from "../Footer/Footer";
+
 import './App.scss';
 
 const App = () => {
     return (
         <div className="app">
-            
+           
            <Navigation/>
+           s
+           
            <MainPage />
            <div>
                <SeparatorPage/>

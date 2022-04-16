@@ -12,6 +12,7 @@
         background-blend-mode: multiply;
         height: 800px;
         align-items: center;
+        
 
         &_textcontent{
             padding-right: 10%;
@@ -37,7 +38,8 @@
             
             height: 650px;  
             &_form{  
-                background-color: rgba(136, 201, 245, 0.6);
+                
+    background-color:  rgb(255, 255, 255);
                 width: 100%;
                 &label{
                     text-align: center;

@@ -1,10 +1,24 @@
 import './navigation.scss';
-import AboutUs from '../AboutUs/AboutUs';
+import { Component } from 'react';
 
-
-const Navigation = () =>{
+class Navigation extends Component{
     
-    const a = function(){
+    constructor(props){
+        super(props);
+        this.state = {
+            menuActiveStatus: false,
+        }
+    }
+
+
+    menuStatus = () =>{
+        this.setState({
+            menuActiveStatus:! this.state.menuActiveStatus 
+        });
+    }
+
+
+     a = () =>{
         window.scrollTo({
             top: 0,
             left: 0,
@@ -12,22 +26,38 @@ const Navigation = () =>{
           });
     }
 
-    return(
+    render (){
+
+        return(
         <>
             <nav className="NavigationBlock" id = "Up">
-                <ul>
-                    <li><a href='#aboutus'> О нас </a></li>
-                    <li><a href="#carousel"> Номера </a></li>
-                    <li><a href="#booking"> Забронировать </a></li>
-                    <li><a href="example.html"> Контакты </a></li>
-                </ul>
+                <div className="burger-btn"
+                onClick = {this.menuStatus}>
+                    <span/>
+                </div>    
             </nav>
+           
+
+            <div className={this.state.menuActiveStatus ? 'menu active': 'menu'}>
+            <div className="blur"/>
+            <div className="menu__content">
+                <ul> 
+                <li><a href="#aboutus" className="href">О нас</a></li>
+                <li><a href="#carousel-rooms" className="href">Номера</a></li>
+                <li><a href="#booking" className="href">Бронирование</a></li>
+                <li><a href="#contacts" className="href">Контакты</a></li> 
+            </ul>    
+            </div>
+        </div>
+
+            
 
             <button id="upper"
-            onClick={a}
+            onClick={this.a}
             >&nbsp; </button>
         </>
-    )
+        )
+    }
 }
 
 export default Navigation;

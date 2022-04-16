@@ -9,7 +9,7 @@ const MainPage = () =>{
         <div className="block_main_content">
              <p> Гостевой дом</p>
             <h1>
-            Эллинг "  " 
+            Эллинг " wwwwwww " 
             </h1>
         </div>
     </div>  
