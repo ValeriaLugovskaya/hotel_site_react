@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hotel_site_react/static/css/main.d7d4e0b7.chunk.css",
+    "main.css": "/hotel_site_react/static/css/main.05a3f6e7.chunk.css",
     "main.js": "/hotel_site_react/static/js/main.6bbcc260.chunk.js",
     "main.js.map": "/hotel_site_react/static/js/main.6bbcc260.chunk.js.map",
     "runtime-main.js": "/hotel_site_react/static/js/runtime-main.62d8dd61.js",
@@ -8,7 +8,7 @@
     "static/js/2.9d9572ae.chunk.js": "/hotel_site_react/static/js/2.9d9572ae.chunk.js",
     "static/js/2.9d9572ae.chunk.js.map": "/hotel_site_react/static/js/2.9d9572ae.chunk.js.map",
     "index.html": "/hotel_site_react/index.html",
-    "static/css/main.d7d4e0b7.chunk.css.map": "/hotel_site_react/static/css/main.d7d4e0b7.chunk.css.map",
+    "static/css/main.05a3f6e7.chunk.css.map": "/hotel_site_react/static/css/main.05a3f6e7.chunk.css.map",
     "static/js/2.9d9572ae.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.9d9572ae.chunk.js.LICENSE.txt",
     "static/media/bookingRooms.scss": "/hotel_site_react/static/media/bookingRooms_img.d7f1c7f4.jpg",
     "static/media/mainPage.scss": "/hotel_site_react/static/media/les_paradise.f0a86993.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.62d8dd61.js",
     "static/js/2.9d9572ae.chunk.js",
-    "static/css/main.d7d4e0b7.chunk.css",
+    "static/css/main.05a3f6e7.chunk.css",
     "static/js/main.6bbcc260.chunk.js"
   ]
 }
