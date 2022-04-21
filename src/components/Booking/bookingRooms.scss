@@ -43,7 +43,10 @@
             align-items:center;
             justify-content: center;
             flex-wrap: wrap;
-            height: 650px;  
+            height: 600px;  
+            background: $block_bg;
+            box-shadow: 0 0 10px $box_shadow;
+            border-radius: 5px;
             &_form{  
                 
                 width: 100%;
