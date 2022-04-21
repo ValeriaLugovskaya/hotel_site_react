@@ -7,8 +7,7 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;      
 }
 
 ul,
@@ -46,7 +45,7 @@ input::-webkit-inner-spin-button {
     margin: 0 auto;
     padding: 0;
     position: relative;
-    background: $purple_invis;
+    background: $background;
 
 
     .bg-decoration {
@@ -57,7 +56,9 @@ input::-webkit-inner-spin-button {
     }
     
 }
-
+head{
+    background: $background;
+}
 main {
     margin-top: 50px;
     position: relative;
@@ -81,6 +82,6 @@ main {
 
 @media (max-width:420px){
     .app{
-        background-color: rgb(176, 194, 223);
+        background-color: $background;
     }
 }

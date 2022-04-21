@@ -1,8 +1,11 @@
+@import '../../style/variables.scss';
+
 .wrapper{
   
-    margin:50px 10%;
-    
+    margin:50px 40px;
+    box-shadow: 0 0 5px $box_shadow;
     background-color: rgba(255, 255, 255, 0.678);
+    border-radius: 10px;
 }
 
 .info_contetnt_title{
@@ -28,7 +31,7 @@ margin-right:10%;
 }
 
 .info_content_text{
-    padding-bottom: 5%;
+    padding: 10px 5%;
     
 }
 .p1{
