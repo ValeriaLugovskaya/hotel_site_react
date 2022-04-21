@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/hotel_site_react/static/css/main.91105d73.chunk.css",
-    "main.js": "/hotel_site_react/static/js/main.6bbcc260.chunk.js",
-    "main.js.map": "/hotel_site_react/static/js/main.6bbcc260.chunk.js.map",
+    "main.css": "/hotel_site_react/static/css/main.de98ff79.chunk.css",
+    "main.js": "/hotel_site_react/static/js/main.c955badb.chunk.js",
+    "main.js.map": "/hotel_site_react/static/js/main.c955badb.chunk.js.map",
     "runtime-main.js": "/hotel_site_react/static/js/runtime-main.62d8dd61.js",
     "runtime-main.js.map": "/hotel_site_react/static/js/runtime-main.62d8dd61.js.map",
-    "static/js/2.9d9572ae.chunk.js": "/hotel_site_react/static/js/2.9d9572ae.chunk.js",
-    "static/js/2.9d9572ae.chunk.js.map": "/hotel_site_react/static/js/2.9d9572ae.chunk.js.map",
+    "static/js/2.c6b0de7a.chunk.js": "/hotel_site_react/static/js/2.c6b0de7a.chunk.js",
+    "static/js/2.c6b0de7a.chunk.js.map": "/hotel_site_react/static/js/2.c6b0de7a.chunk.js.map",
     "index.html": "/hotel_site_react/index.html",
-    "static/css/main.91105d73.chunk.css.map": "/hotel_site_react/static/css/main.91105d73.chunk.css.map",
-    "static/js/2.9d9572ae.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.9d9572ae.chunk.js.LICENSE.txt",
-    "static/media/bookingRooms.scss": "/hotel_site_react/static/media/bookingRooms_img.d7f1c7f4.jpg",
-    "static/media/mainPage.scss": "/hotel_site_react/static/media/les_paradise.f0a86993.jpg",
+    "static/css/main.de98ff79.chunk.css.map": "/hotel_site_react/static/css/main.de98ff79.chunk.css.map",
+    "static/js/2.c6b0de7a.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.c6b0de7a.chunk.js.LICENSE.txt",
+    "static/media/mainPage.scss": "/hotel_site_react/static/media/ggg.47a1655a.jpg",
     "static/media/m.795aade0.jpg": "/hotel_site_react/static/media/m.795aade0.jpg",
     "static/media/main1.f65fb27b.jpg": "/hotel_site_react/static/media/main1.f65fb27b.jpg",
-    "static/media/sea_icon.715b8680.svg": "/hotel_site_react/static/media/sea_icon.715b8680.svg",
+    "static/media/bookingRooms.scss": "/hotel_site_react/static/media/main2.e4d48acc.jpg",
+    "static/media/carouselRooms.scss": "/hotel_site_react/static/media/people.b5095d80.svg",
     "static/media/navigation.scss": "/hotel_site_react/static/media/upper_button.a23788b5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.62d8dd61.js",
-    "static/js/2.9d9572ae.chunk.js",
-    "static/css/main.91105d73.chunk.css",
-    "static/js/main.6bbcc260.chunk.js"
+    "static/js/2.c6b0de7a.chunk.js",
+    "static/css/main.de98ff79.chunk.css",
+    "static/js/main.c955badb.chunk.js"
   ]
 }
