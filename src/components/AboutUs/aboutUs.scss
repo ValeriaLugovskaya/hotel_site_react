@@ -1,8 +1,8 @@
 .wrapper{
   
-    margin:200px 10% 100px 10%;
+    margin:50px 10%;
     
-    
+    background-color: rgba(255, 255, 255, 0.678);
 }
 
 .info_contetnt_title{
@@ -10,7 +10,8 @@
 }
 
 .color_wrapper{
-background-color: rgba(215, 233, 254, 0.678);
+
+
 }
 
 .left{
@@ -42,6 +43,15 @@ margin-right:10%;
     }
     .right img{
         visibility: hidden;
+        height: 0;
     }
-
+    .wrapper{
+        margin: 15px 15px;
+    }
+    .info_content_text{
+        padding: 10px 15px;
+    }
+    .info_element{
+        padding:10px;
+    }
 } 

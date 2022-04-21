@@ -1,6 +1,6 @@
 import MainPage from "../MainPage/MainPage";
 import Navigation from "../Navigation/Navigation";
-import SeparatorPage from "../Separatop/Separator";
+/* import SeparatorPage from "../Separatop/Separator"; */
 import AboutUs from "../AboutUs/AboutUs";
 import CarouselRooms from "../CarouselRooms/CarouselRooms";
 import BookingRooms from "../Booking/BookingRooms";
@@ -13,12 +13,11 @@ const App = () => {
         <div className="app">
            
            <Navigation/>
-           s
            
            <MainPage />
-           <div>
+           {/* <div>
                <SeparatorPage/>
-           </div>
+           </div> */}
            <AboutUs/>
            
         <CarouselRooms/> 

@@ -1,5 +1,6 @@
 import './navigation.scss';
 import { Component } from 'react';
+import '../../services/HostelService';
 
 class Navigation extends Component{
     
@@ -9,7 +10,6 @@ class Navigation extends Component{
             menuActiveStatus: false,
         }
     }
-
 
     menuStatus = () =>{
         this.setState({
@@ -53,8 +53,7 @@ class Navigation extends Component{
             
 
             <button id="upper"
-            onClick={this.a}
-            >&nbsp; </button>
+            onClick={this.a}> </button>
         </>
         )
     }

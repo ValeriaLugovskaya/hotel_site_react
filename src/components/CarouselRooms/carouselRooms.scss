@@ -1,9 +1,10 @@
 @import '../../style/variables.scss';
 
+
 .block_wr{
     margin: 5% 0;
     
-    background-color: rgba(215, 233, 254, 0.678);
+    
 }
 
  .block_rooms{
@@ -11,6 +12,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items:center;
+    background-color: rgba(255, 255, 255, 0.678);
     &_img{
         max-width: 40%;  
     }
@@ -39,6 +41,19 @@
     
 }
 
+.person{
+    display: flex;
+    flex-direction: column;
+    background-size:contain;
+}
+.person_icon{
+    width: 50px;
+    
+    background: url('../../resources/svg/people.svg');
+    height: 50px;
+    z-index: 100;
+    
+}
 
 @media (max-width: 900px) {
     .block_rooms{

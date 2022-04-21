@@ -6,12 +6,13 @@
 .book_block{
         display: flex;
         justify-content: center;
-        background: url('../../resources/img/bookingRooms_img.jpg') rgba(37, 104, 222, 0.6);
+        background: url('../../resources/img/main2.jpg') rgba(255, 255, 255, 1);
         background-size:cover;
         background-repeat: no-repeat;
         background-blend-mode: multiply;
-        height: 800px;
+        height: 110vh;
         align-items: center;
+        
         
 
         &_textcontent{
@@ -25,6 +26,13 @@
     }
     .textcontent_text, label{
         color:$font;
+    }
+
+
+    button.book_block_btn{
+        background: rgb(95, 121, 237);
+        width: 70%;
+        margin: 10% 10%;
     }
 
 
@@ -44,14 +52,22 @@
                 &label{
                     text-align: center;
                     padding-bottom: 10%;
+                    
                 }
             }    
             &_textcontent{
                 padding: 0%;
+                color:black;
             }
         }
 
-        h4{text-align: center; padding-bottom: 10px;}
+        h4{text-align: center; padding-bottom: 10px;
+        color:black;}
+
+        .textcontent_text, label{
+            color:black;
+            font-size: large;
+        }
     
    .book_block_btn{
             margin:10px auto;
@@ -63,7 +79,7 @@
             background: rgb(95, 121, 237);
             
         }
- 
+
         .textcontent{
             padding:0;
             margin:0;
@@ -71,6 +87,7 @@
             
             &_text{
                 display:none;
+                color: black;
             }
         }
         label{

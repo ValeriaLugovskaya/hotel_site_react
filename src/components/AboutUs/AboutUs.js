@@ -14,7 +14,7 @@ const AboutUs = () =>{
                         
                         
                         
-                        <p className="info_content_text">    <img src = {aboutUs_img} alt = 'sads'  className = 'rigth'/>
+                        <div className="info_content_text">    <img src = {aboutUs_img} alt = 'sads'  className = 'rigth'/>
                         <div className="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
                             ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
                             ipsam cumque ipsum accusamus veritatis soluta dolores impedit
@@ -25,7 +25,7 @@ const AboutUs = () =>{
                             ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
                             ipsam cumque ipsum accusamus veritatis soluta dolores impedit
                             consequuntur aspernatur perspiciatis autem.</div>
-                        </p>
+                        </div>
             </div>
 
                     <div className="info_element">
