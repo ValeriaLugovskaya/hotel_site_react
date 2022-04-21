@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hotel_site_react/static/css/main.0c8feeca.chunk.css",
+    "main.css": "/hotel_site_react/static/css/main.7239df79.chunk.css",
     "main.js": "/hotel_site_react/static/js/main.c955badb.chunk.js",
     "main.js.map": "/hotel_site_react/static/js/main.c955badb.chunk.js.map",
     "runtime-main.js": "/hotel_site_react/static/js/runtime-main.62d8dd61.js",
@@ -8,7 +8,7 @@
     "static/js/2.c6b0de7a.chunk.js": "/hotel_site_react/static/js/2.c6b0de7a.chunk.js",
     "static/js/2.c6b0de7a.chunk.js.map": "/hotel_site_react/static/js/2.c6b0de7a.chunk.js.map",
     "index.html": "/hotel_site_react/index.html",
-    "static/css/main.0c8feeca.chunk.css.map": "/hotel_site_react/static/css/main.0c8feeca.chunk.css.map",
+    "static/css/main.7239df79.chunk.css.map": "/hotel_site_react/static/css/main.7239df79.chunk.css.map",
     "static/js/2.c6b0de7a.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.c6b0de7a.chunk.js.LICENSE.txt",
     "static/media/mainPage.scss": "/hotel_site_react/static/media/ggg.47a1655a.jpg",
     "static/media/m.795aade0.jpg": "/hotel_site_react/static/media/m.795aade0.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.62d8dd61.js",
     "static/js/2.c6b0de7a.chunk.js",
-    "static/css/main.0c8feeca.chunk.css",
+    "static/css/main.7239df79.chunk.css",
     "static/js/main.c955badb.chunk.js"
   ]
 }
