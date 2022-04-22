@@ -2,38 +2,50 @@ import './carouselRooms.scss';
 import { Carousel } from 'react-bootstrap';
 import img1 from "../../resources/img/m.jpg";
 import { Component } from 'react';
-
+import HostelService from '../../services/HostelService';
 
 class CarouselRooms extends Component{
 
-  state = {
-    thumbnail: {img1},
-      name: 'заглушка'
+  state =  {
+  char: {}
+}
+
+  componentDidMount(id){
+    this.a();
+    console.log(this.state.char.links);
   }
 
-  /* 
 hotelService = new HostelService();
- componentDidMount(){
-  this.a();
-}; 
+ 
+changeState = (char) =>{
+    this.setState({char});  
+}
+
+/*  pictureLoad = (id) =>{
+   console.log(this.state.char.links[0].link);
+  return this.state.char.links[id].link;
+}
+  */
+
 
     a = () =>{
-      
-      this.hotelService.getAllCharacters()
-      .then(res =>{
-        this.setState(res)
-      })
-    } */
+      this.hotelService
+      .getRoom(4)
+      .then(this.changeState)
+    } 
+
+     
+    
 
   render(){
-    const {thumbnail,  name} = this.state;
+    const {char:{id, title, description, price, links}} = this.state;
+    
     
     return(
       <div className="block_wr">
         
         <h5 className="carousel_title" id = "carousel-rooms"
         >
-          Выберите номер
         </h5>
         <div className="block_rooms">
           <div className="block_rooms_img">
@@ -41,8 +53,8 @@ hotelService = new HostelService();
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src = {img1}
-                  alt = {name}/>  
+                  src = {links ? links[0].link : null}
+                  alt = {title}/>  
               </Carousel.Item>
               
               <Carousel.Item>
@@ -55,7 +67,7 @@ hotelService = new HostelService();
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={img1}
+                  src={links ? links[0].link : null}
                   alt="Third slide"/>
               </Carousel.Item>
           </Carousel>
@@ -79,7 +91,7 @@ hotelService = new HostelService();
             </div>
             
             <p className="prices">
-              Цена: 3000 рублей за ночь
+              Цена: {price} рублей за ночь
             </p>
             </div>
            

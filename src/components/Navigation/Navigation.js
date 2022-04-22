@@ -2,12 +2,14 @@ import './navigation.scss';
 import { Component } from 'react';
 import '../../services/HostelService';
 
+
+
 class Navigation extends Component{
     
     constructor(props){
         super(props);
         this.state = {
-            menuActiveStatus: false,
+            menuActiveStatus: false,    
         }
     }
 

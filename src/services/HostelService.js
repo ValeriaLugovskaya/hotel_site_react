@@ -1,30 +1,39 @@
-/* class HostelService {
+ class HostelService {
   
-    apiKey = 'f6e4ac667f544936bed6a7fc74a69704';
+    apiKey = 'https://00bf7046-4968-4194-af12-6fc80a0d03cb.mock.pstmn.io//room/4';
 
     getResource = async (url) => {
         let res = await fetch(url);
-    
         if (!res.ok) {
             throw new Error(`Could not fetch ${url}, status: ${res.status}`);
         }
-    
         return await res.json();
     }
 
-    getAllCharacters = async () => {
+    getRoom = async (idRoom) => {
+        const res = await this.getResource(`${this.apiKey}`);
         
-        const res = await this.getResource(`https://gateway.marvel.com:443/v1/public/characters/1011334?apikey=f6e4ac667f544936bed6a7fc74a69704`);
-        
-        return this._transformCharacter(res);
+        return this._transformRoom(res);
     }
 
- _transformCharacter = (res) => {
+  _transformRoom = (char) => {
+      
         return {
-            thumbnail: res.data.results[0].thumbnail.path + '.' + res.data.results[0].thumbnail.extension,
-            name: res.data.results[0].name,
-        }
-} 
+                id: char.id,
+                title: char.title,
+                description: char.description,
+                price: char.price,
+                links: [
+                    {link: char.links[0].link},
+                    {link: char.links[1].link},
+                    {link: char.links[2].link},
+                    {link: char.links[3].link},
+                ]
+    }  
+ }
+ }
+ export default HostelService;
+
 /* 
     getCharacter = async (id) => {
         const res = await this.getResource(`${this._apiBase}characters/${id}?${this._apiKey}`);
@@ -45,4 +54,5 @@
  
 }
 
-export default HostelService; */
+export default HostelService; 
+*/

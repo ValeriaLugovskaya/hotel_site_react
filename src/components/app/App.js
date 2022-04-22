@@ -1,15 +1,18 @@
 import MainPage from "../MainPage/MainPage";
 import Navigation from "../Navigation/Navigation";
-/* import SeparatorPage from "../Separatop/Separator"; */
+import { Component } from 'react';
 import AboutUs from "../AboutUs/AboutUs";
 import CarouselRooms from "../CarouselRooms/CarouselRooms";
 import BookingRooms from "../Booking/BookingRooms";
 import Footer from "../Footer/Footer";
-
 import './App.scss';
 
-const App = () => {
-    return (
+class App extends Component{
+    
+    
+
+    render(){
+        return (
         <div className="app">
            
            <Navigation/>
@@ -26,6 +29,7 @@ const App = () => {
         <Footer/>
         </div>
     );
+}
 }
 
 export default App;
