@@ -20,11 +20,7 @@ const AboutUs = () =>{
                             ipsam cumque ipsum accusamus veritatis soluta dolores impedit
                             consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
                             ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
-                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
-                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
-                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
-                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
-                            consequuntur aspernatur perspiciatis autem.</div>
+                            </div>
                         </div>
             </div>
 
@@ -38,11 +34,7 @@ const AboutUs = () =>{
                             ipsam cumque ipsum accusamus veritatis soluta dolores impedit
                             consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
                             ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
-                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
-                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
-                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
-                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
-                            consequuntur aspernatur perspiciatis autem.
+                            
                         </p>
             </div>
 
@@ -57,10 +49,7 @@ const AboutUs = () =>{
                             consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
                             ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
                             ipsam cumque ipsum accusamus veritatis soluta dolores impedit
-                            consequuntur aspernatur perspiciatis autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, 
-                            ex dolorum quisquam, placeat culpa vel repudiandae eum eligendi
-                            ipsam cumque ipsum accusamus veritatis soluta dolores impedit
-                            consequuntur aspernatur perspiciatis autem.
+                            
                         </p>
             </div>
         </div>

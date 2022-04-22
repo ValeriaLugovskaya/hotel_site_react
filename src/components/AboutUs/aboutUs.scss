@@ -1,11 +1,11 @@
 @import '../../style/variables.scss';
 
 .wrapper{
-  
-    margin:25px 3.6% ;
+    margin:50px 10%;
     box-shadow: 0 0 5px $box_shadow;
     background-color: rgba(255, 255, 255, 0.678);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .info_contetnt_title{
@@ -18,16 +18,18 @@
 }
 
 .left{
-width:25%; 
+width:300px; 
 float:left;
 margin-right:10%;
+display: table-cell;
 }
 
 
 .rigth{
-    width:25%; 
+    width:300px; 
     float:right;
-    margin-left:20%;
+    margin-left:10%;
+    display: table-cell;
 }
 
 .info_content_text{
