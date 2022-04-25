@@ -53,22 +53,22 @@ changeState = (char) =>{
             <Carousel>
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
-                  src = {links ? links[0].link : null}
+                  className="d-block"
+                  src = {img1} /* links ? links[0].link : null */
                   alt = {title}/>  
               </Carousel.Item>
               
                <Carousel.Item>
                 <img
-                  className="d-block w-100"
-                  src={links ? links[1].link : null}
+                  className="d-block"
+                  src={img1} /* links ? links[1].link : null */
                   alt="Second slide"/>
               </Carousel.Item>
               
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
-                  src={links ? links[3].link : null}
+                  className="d-block"
+                  src={img1} /* links ? links[3].link : null */
                   alt="Third slide"/>
               </Carousel.Item> 
           </Carousel>

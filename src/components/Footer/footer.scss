@@ -3,13 +3,13 @@
 .footer_block{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     width:100%;
     align-items: center;
     height: fit-content;
     background-color:  #83D4F3;
     color: $font;
-    padding:0;
+    padding:2%;
     margin:0;
     
 }

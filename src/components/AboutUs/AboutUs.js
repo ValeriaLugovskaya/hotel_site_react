@@ -1,12 +1,30 @@
 import './aboutUs.scss';
-import aboutUs_img from '../../resources/img/main1.jpg';
+import aboutUs_img from '../../resources/img/a6.jpg';
 
 
 const AboutUs = () =>{
 
     return(
-        <div className = "color_wrapper">
-        <div className="wrapper" id = "aboutus">
+       <>
+       <div class="wrapper">
+        <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
+       <img src={aboutUs_img} alt="ss" />
+      </div>
+      
+      <div class="wrapper">
+        <img src={aboutUs_img} alt="ss" />
+       <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
+      </div>
+
+      </>
+    )
+}
+
+export default AboutUs;
+
+/* 
+
+<div className="wrapper" id = "aboutus">
             <div className="info">
                 <div className="info_content">
                     <h2 className="info_contetnt_title">О нас</h2>
@@ -54,9 +72,4 @@ const AboutUs = () =>{
             </div>
         </div>
     </div>
-</div>
-        </div>
-    )
-}
-
-export default AboutUs;
+</div> */

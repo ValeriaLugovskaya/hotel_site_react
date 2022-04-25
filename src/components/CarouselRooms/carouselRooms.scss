@@ -98,8 +98,34 @@ span{
     
 }
 
-@media (max-width: 900px) {
 
+@media (max-width: 1199.98px) {  }
+
+@media (max-width: 991.98px) {
+    .block_wr{
+    background-color: $block_bg;
+    box-shadow: 0 0 10px $box_shadow;
+    border-radius: 10px;
+    margin:0;
+    
+    }
+    .block_rooms{
+        flex-wrap:wrap;
+        &_text_content{
+            font-size: 22px;
+            width: 100%;
+            padding-top:5%;
+            text-align: center;
+        }
+    &_img{
+        width: 100%;
+        align-self: center;
+        padding:0;
+        }
+    }
+  }
+
+@media (max-width: 767.98px) { 
     .block_wr{
         background-color: $block_bg;
     box-shadow: 0 0 10px $box_shadow;
@@ -116,4 +142,23 @@ span{
         max-width: 100%;
         }
     }
-}
+ }
+
+@media (max-width: 575.98px) { 
+    .block_wr{
+        background-color: $block_bg;
+    box-shadow: 0 0 10px $box_shadow;
+    border-radius: 10px;
+    }
+    .block_rooms{
+        flex-wrap:wrap;
+        &_text_content{
+            font-size: 22px;
+            width: 100%;
+            padding-top:5%;
+        }
+    &_img{
+        max-width: 100%;
+        }
+    }
+ }
