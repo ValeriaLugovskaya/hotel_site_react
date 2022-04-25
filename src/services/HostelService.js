@@ -1,6 +1,6 @@
  class HostelService {
   
-    apiKey = 'https://00bf7046-4968-4194-af12-6fc80a0d03cb.mock.pstmn.io//room/4';
+    apiKey = 'http://127.0.0.1:8081/room/all';
 
     getResource = async (url) => {
         let res = await fetch(url);
@@ -10,10 +10,9 @@
         return await res.json();
     }
 
-    getRoom = async (idRoom) => {
+    getRoom = async (id) => {
         const res = await this.getResource(`${this.apiKey}`);
-        
-        return this._transformRoom(res);
+        return this._transformRoom(res[id]);
     }
 
   _transformRoom = (char) => {

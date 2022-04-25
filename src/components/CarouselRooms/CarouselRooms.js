@@ -10,32 +10,27 @@ class CarouselRooms extends Component{
   char: {}
 }
 
-  componentDidMount(id){
-    this.a();
-    console.log(this.state.char.links);
+  componentDidMount(){
+    this.chooseRoom(0);
   }
 
 hotelService = new HostelService();
  
 changeState = (char) =>{
     this.setState({char});  
+    console.log(this.state.char);
 }
 
-/*  pictureLoad = (id) =>{
-   console.log(this.state.char.links[0].link);
-  return this.state.char.links[id].link;
-}
-  */
-
-
-    a = () =>{
+    chooseRoom = (id) =>{
       this.hotelService
-      .getRoom(4)
+      .getRoom(id)
       .then(this.changeState)
     } 
 
-     
-    
+    changeRoom = () =>{
+      this.state.char.id === 4 ? this.chooseRoom(0):this.chooseRoom(this.state.char.id); 
+    } 
+        
 
   render(){
     const {char:{id, title, description, price, links}} = this.state;
@@ -48,6 +43,12 @@ changeState = (char) =>{
         >
         </h5>
         <div className="block_rooms">
+
+       {/*  <button className="changeroom_right"
+        onClick={this.changeRoom}> cccc</button> */}
+        {/* <button id="changeroom_left"
+            onClick={this.changeRoom(id)}> </button> */}
+
           <div className="block_rooms_img">
             <Carousel>
               <Carousel.Item>
@@ -57,32 +58,31 @@ changeState = (char) =>{
                   alt = {title}/>  
               </Carousel.Item>
               
-              <Carousel.Item>
+               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={img1}
+                  src={links ? links[1].link : null}
                   alt="Second slide"/>
               </Carousel.Item>
               
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={links ? links[0].link : null}
+                  src={links ? links[3].link : null}
                   alt="Third slide"/>
-              </Carousel.Item>
+              </Carousel.Item> 
           </Carousel>
         </div>
   
         <div className="block_rooms_text_content">
             <h6 className="title_content title">
-                Номер с балконом
+                {title}
             </h6>
             <p className="text_content description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br/>Ea sunt ab provident odio ullam. 
-                Ea doloribus nulla reprehenderit odio voluptas at tempore
+               {description}
             </p>
            
-            <div className="person">
+            {/* <div className="person">
              <div className="persons_max">
                 <div 
               className="person_icon">
@@ -91,13 +91,18 @@ changeState = (char) =>{
             </div>
             
             <p className="prices">
-              Цена: {price} рублей за ночь
+              Цена: {price} рублей за ночь {id}
             </p>
-            </div>
-           
-
-        </div> 
+            </div> */}        
       </div>
+      <div className="block_wr_prices">
+        <div className="wr_prices_text">
+        <p> Цена (май - июль): {price} рублей <br/>
+        <span>за ночь</span></p>
+        </div>
+        <button className="carousel_button"> Забронировать</button>
+      </div>
+      </div> 
     </div>
   )
   }

@@ -14,16 +14,18 @@ class App extends Component{
     render(){
         return (
         <div className="app">
-           
+           <div className="main_img">
            <Navigation/>
            
            <MainPage />
+           </div>
            {/* <div>
                <SeparatorPage/>
            </div> */}
            <AboutUs/>
            
         <CarouselRooms/> 
+        
         <BookingRooms/>
 
         <Footer/>

@@ -15,8 +15,10 @@
 .menu__content{
     width:100%;
     text-align: end;
-    margin: 20px 0 5px 0;
-    background-color: rgb(176, 194, 223);
+    margin: 0;
+    text-shadow: 20px;
+    background-color: rgba(34, 78, 122, 0.6);
+    /* background-color: rgb(176, 194, 223); */
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,24 +28,30 @@
         display: inline-block;
         font-size: 20px;
         color:aliceblue;
+        ;
         margin: 0 10px 0 24px;
         right:10%;
+        width:fit-content;
+        text-align: center;
         
         } 
-        & :hover, :active{
-            transition-duration: 0.4s;
-            color: rgba(153, 230, 239);
-            text-decoration: underline;
-        }
+        
     }
 
+    li:hover{
+        transition-duration: 0.4s;
+        background-color: #FF9E35;
+        text-decoration: underline;
+        border-radius:5px;
+        
+    }
 
 
 #upper{
     position:fixed;
     z-index: 50;
     top: 90%;
-    left: 95%;
+    left: 90%;
     border:0;
     width: 80px;
     height: 40px;

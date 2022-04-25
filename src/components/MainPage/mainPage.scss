@@ -3,10 +3,10 @@
 
 
 .block_main{
-    position:relative;
+  position: relative;
     width: 100vw;
     height: 100vh;
-    background: url('../../resources/img/les_paradise.jpg') rgba(196, 225, 240, 0.7);
+    margin: -20px 0 0 0;
     
     margin-top:0;
     background-size:cover;
@@ -17,6 +17,7 @@
       padding-top: 200px;
     }
 }
+
 
 
 

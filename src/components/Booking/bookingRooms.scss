@@ -6,10 +6,11 @@
 .book_block{
         display: flex;
         justify-content: center;
-        background: url('../../resources/img/ggg.jpg') rgba(255, 255, 255, 1);
+        background: url('../../resources/img/booking_img_bg.jpg') rgb(255, 255, 255);
         background-size:cover;
         background-repeat: no-repeat;
         background-blend-mode: multiply;
+        margin-bottom: 100px;
         height: 110vh;
         align-items: center;
         
@@ -30,9 +31,12 @@
 
 
     button.book_block_btn{
-        background: rgb(95, 121, 237);
+        background: $orange;
         width: 70%;
         margin: 10% 30px;
+        border-radius: 10px;
+        color:white;
+
     }
 
 
@@ -44,7 +48,7 @@
             justify-content: center;
             flex-wrap: wrap;
             height: 600px;  
-            background: $block_bg;
+            background: rgb(128, 195, 222);
             box-shadow: 0 0 10px $box_shadow;
             border-radius: 5px;
             &_form{  

@@ -4,7 +4,7 @@
 
 * {
     
-    font-family: "Roboto", sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;      
@@ -45,8 +45,6 @@ input::-webkit-inner-spin-button {
     margin: 0 auto;
     padding: 0;
     position: relative;
-    background: $background;
-
 
     .bg-decoration {
         position: absolute;
