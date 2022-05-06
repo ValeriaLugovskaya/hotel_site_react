@@ -20,11 +20,38 @@ class BookingRooms extends Component{
         this.setState({
             [e.target.name] : e.target.value
         })
+      
     }
 
+    postFun(){
+        const req = {
+            method: 'post',  
+                headers: {  
+                "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"  
+                }, 
+            body: JSON.stringify({ 
+                person: {
+                phone_number:this.state.phone,
+                first_name: this.state.firstName,
+                last_name: this.state.lastName,
+                father_name: this.state.middleName    
+            },
+            room: 2,
+            dates:{
+                arrive_date: "2022-08-06",
+                leave_date: "2022-09-07"
+            }
+        })
+    }
+    console.log(req.body);
 
-
+        fetch('https://jsonplaceholder.typicode.com/posts', {req}) 
+          .then(response => response.json())
+          .then(json => console.log(json));
+  }
+  
     onSubmit = (e) => {
+        console.log(this.state.firstName);
         e.preventDefault();
         this.setState({
             firstName: '',
@@ -34,6 +61,7 @@ class BookingRooms extends Component{
             startDate: '',
             lastDate: ''
         })
+        this.postFun();
     }
 
     render(){
@@ -45,7 +73,7 @@ class BookingRooms extends Component{
             
             <h4 className="textcontent_title">
                     Забронировать номер
-                </h4>    
+            </h4>    
                 <p className="textcontent_text">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,<br/>
                      temporibus fugit, facilis voluptas autem quia fuga impedit similique<br/>

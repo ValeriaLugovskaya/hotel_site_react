@@ -6,16 +6,24 @@ const AboutUs = () =>{
 
     return(
        <>
-       <div class="wrapper">
-        <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
-       <img src={aboutUs_img} alt="ss" />
+       <h2>О нас</h2>
+
+       <div className="wrapper_block">
+       <div className="wrapper">
+       
+        <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
+       <img className='wrapper_img' src={aboutUs_img} alt="ss" />
       </div>
       
       <div class="wrapper">
-        <img src={aboutUs_img} alt="ss" />
-       <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
+        <img className='wrapper_img sec' src={aboutUs_img} alt="ss" />
+       <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
       </div>
-
+      <div class="wrapper">
+        <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
+       <img className='wrapper_img' src={aboutUs_img} alt="ss" />
+      </div>
+      </div>
       </>
     )
 }

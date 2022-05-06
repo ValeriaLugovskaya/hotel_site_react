@@ -6,15 +6,16 @@
   position: relative;
     width: 100vw;
     height: 100vh;
-    margin: -20px 0 0 0;
-    
+    margin-bottom:30px;
+    font-size: 3em;
     margin-top:0;
-    background-size:cover;
     &_content{
       color:$font;
-      font-size: 70px;
+      text-shadow: 1px 2px 3px rgb(124, 177, 234);
+      
       text-align: center;
       padding-top: 200px;
+
     }
 }
 
@@ -28,15 +29,26 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
+@media (min-width: 1992px){
+.block_main{
+  position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom:30px;
+    
+    margin-top:0;
+    &_content{
+      color:$font;
+      text-shadow: 1px 2px 3px rgb(124, 177, 234);
+      font-size: 3em;
+      text-align: center;
+      padding-top: 200px;
+      &_title{
+        font-size: 0.7em;
+      }
+    }
+  }
+}
 
 
 /* 

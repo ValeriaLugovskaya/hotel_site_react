@@ -13,20 +13,33 @@
         margin-bottom: 100px;
         height: 110vh;
         align-items: center;
-        
+        margin: 0;
         
 
         &_textcontent{
             padding-right: 10%;
+            
         }
     }
 
+
+
     h4{
-        font-size: large;
+        
         color: $font;
     }
-    .textcontent_text, label{
+    .textcontent_text{
         color:$font;
+        font-size: 1.7vw;
+    }
+
+    .textcontent_title{
+        font-size: 2vw;
+    }
+
+    label{
+        color:$font;
+        font-size: 1.5vw;
     }
 
 
