@@ -58,7 +58,7 @@ changeState = (char) =>{
 
         
       
-        <svg className={id === 1 ? 'changeroom_right hidden': 'changeroom_right'}
+       {/*  <svg className={id === 1 ? 'changeroom_right hidden': 'changeroom_right'}
         onClick={this.changeRoomReverse} viewBox="0 0 9 14">
             <path className="svg-arrow" d="M6.660,8.922 L6.660,8.922 L2.350,13.408 
             L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 
@@ -71,7 +71,7 @@ changeState = (char) =>{
         <path className="svg-arrow" d="M6.660,8.922 L6.660,8.922 
         L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515
          L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
-      </svg>
+      </svg> */}
 
     
       <div className="block_wr">
