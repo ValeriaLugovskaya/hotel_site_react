@@ -53,9 +53,9 @@ class Navigation extends Component{
         </div>
 
             
-
+{/* 
             <button id="upper"
-            onClick={this.a}> </button>
+            onClick={this.a}> </button> */}
         </>
         )
     }
