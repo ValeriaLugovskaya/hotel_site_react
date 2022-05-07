@@ -1,7 +1,6 @@
 @import  '../../style/variables';
 
 
-
 .block_main{
   position: relative;
     width: 100vw;
@@ -11,16 +10,11 @@
     margin-top:0;
     &_content{
       color:$font;
-      text-shadow: 1px 2px 3px rgb(124, 177, 234);
-      
+      text-shadow: 1px 2px 3px rgb(124, 177, 234);      
       text-align: center;
       padding-top: 200px;
-
     }
 }
-
-
-
 
 
 @media (max-width: 580px){
@@ -52,7 +46,6 @@
 
 
 /* 
-
 p
 {
   font-size:20px; 
