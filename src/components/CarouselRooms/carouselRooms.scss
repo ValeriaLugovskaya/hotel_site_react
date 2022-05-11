@@ -61,14 +61,15 @@
     background-color: #fff;
     margin: 0 5%;
 
-    &_img{max-width: 50%;}
+    &_img{max-width: 55%;}
     & img{
-        min-width: 100%;  
+        max-width: 100%;  
         margin: 0;
+        
     }
     &_text_content{
         font-size: 22px;
-        width: 50%;
+        width: 45%;
         padding-left: 3%;
     }
 } 
