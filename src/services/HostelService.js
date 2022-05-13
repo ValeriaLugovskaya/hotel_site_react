@@ -1,6 +1,6 @@
  class HostelService {
   
-    apiKey = 'http://127.0.0.1:8081/room/all';
+    apiKey = 'http://127.0.0.1:8000/paradise/room/all';
 
     getResource = async (url) => {
         let res = await fetch(url);
@@ -10,18 +10,17 @@
         return await res.json();
     }
 
-    getRoom = async (id) => {
+    getRoom = async (room_number) => {
         const res = await this.getResource(`${this.apiKey}`);
-        return this._transformRoom(res[id]);
+        return this._transformRoom(res[room_number]);
     }
 
   _transformRoom = (char) => {
       
         return {
-                id: char.id,
-                title: char.title,
+                room_number: char.room_number,
                 description: char.description,
-                price: char.price,
+                price: char.price.price,
                 links: [
                     {link: char.links[0].link},
                     {link: char.links[1].link},

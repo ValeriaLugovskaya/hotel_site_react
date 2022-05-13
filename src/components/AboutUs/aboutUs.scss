@@ -13,7 +13,7 @@
   }
   
   .wrapper_img{
-    max-width: 40%;
+    max-width: 50%;
     flex: 1 1 200px;
     margin:0px auto;
     margin: 0 5% 0 5%;
@@ -38,14 +38,14 @@
   }
 
 
-  @media (max-width: 499px){
+  @media (max-width: 750px){
     .wrapper{
         display: flex;
         flex-direction: column;
-        max-width: 95%;
     }
 
         .wrapper_img{
+            min-width: 80%;
             max-width: 100%;
         }
     .wrapper_block{
@@ -63,29 +63,8 @@
         order:10;
     }
     .one{
-        padding:0 1% 0 1%;
-        flex:0 1 0;
+        overflow: hidden;
         width:100%;
-        -webkit-hyphens: auto;
-    -webkit-hyphenate-limit-before: 3;
-    -webkit-hyphenate-limit-after: 3;
-    -webkit-hyphenate-limit-chars: 6 3 3;
-    -webkit-hyphenate-limit-lines: 2;
-    -webkit-hyphenate-limit-last: always;   
-    -webkit-hyphenate-limit-zone: 8%;
-
-    -moz-hyphens: auto;
-    -moz-hyphenate-limit-chars: 6 3 3;
-    -moz-hyphenate-limit-lines: 2;  
-    -moz-hyphenate-limit-last: always;
-    -moz-hyphenate-limit-zone: 8%;
-
-    -ms-hyphens: auto;
-    -ms-hyphenate-limit-chars: 6 3 3;
-    -ms-hyphenate-limit-lines: 2;
-    -ms-hyphenate-limit-last: always;   
-    -ms-hyphenate-limit-zone: 8%;
-
     }
 
     img{

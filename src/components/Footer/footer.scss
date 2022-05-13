@@ -2,17 +2,57 @@
 
 .footer_block{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     width:100%;
     align-items: flex-start;
     height: fit-content;
     background-color:  #83D4F3;
     color: $font;
+    font-size: 1.3em;
     padding:2%;
     margin:0;
     
+}
+
+
+.arrow_up{
+cursor: pointer;
+    &:after{
+    content: '        \25BC';
+    }
+padding-bottom: 5%;
+}
+.arrow_down{
+    cursor: pointer;
+    &:after{
+    content: '          \25B2';
+    }
+}
+
+.icon_viber{
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+.phoneNumber{
+    display:flex;
+    padding-top:5%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.place{
+cursor: pointer;
+}
+
+.hide{
+    visibility: hidden;
+    height:0;
 }
 
 @media (max-width: 580px) {
@@ -23,10 +63,4 @@
     iframe{
        width: 100%;
     }
-
-    
-.footer_block{
-    background-color: #fff;
-    color:black;
-}
 }

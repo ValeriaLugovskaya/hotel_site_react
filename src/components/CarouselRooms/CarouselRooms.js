@@ -10,9 +10,9 @@ class CarouselRooms extends Component{
   char: {}
 }
 
-  componentDidMount(){
-    this.chooseRoom(0);
-  }
+componentDidMount(){
+    this.chooseRoom(1);
+}
 
 hotelService = new HostelService();
  
@@ -21,113 +21,107 @@ changeState = (char) =>{
     console.log(this.state.char);
 }
 
-    chooseRoom = (id) =>{
-      console.log(`id = ${id}`);
+chooseRoom = (room_number) =>{
+      console.log(`room_number = ${room_number}`);
       this.hotelService
-      .getRoom(id)
+      .getRoom(room_number)
       .then(this.changeState)
-    } 
+} 
 
-    chooseRoomReverse = (id) =>{
+chooseRoomReverse = (room_number) =>{
       this.setState({
-        id:--id
-      });
-
-      this.hotelService
-      .getRoom(id-1)
-      .then(this.changeState)
+        room_number:--room_number
+});
+  this.hotelService
+  .getRoom(room_number-1)
+  .then(this.changeState)
     }
 
-    changeRoom = () =>{
-      this.state.char.id === 4 ? this.chooseRoom(0):this.chooseRoom(this.state.char.id); 
-    } 
-        
-    changeRoomReverse = () =>{
-      this.chooseRoomReverse(this.state.char.id);
-    } 
+changeRoom = () =>{
+      this.state.char.room_number === 4 ? this.chooseRoom(0):this.chooseRoom(this.state.char.room_number); 
+} 
 
-    
+changeRoomReverse = () =>{
+      this.chooseRoomReverse(this.state.char.room_number);
+} 
 
+CarouselItemHTML(lin){
+      return(
+        <Carousel.Item>
+                <img
+                  className="d-block"
+                  src= {`${lin}`} /* links ? links[3].link : null */
+                  alt="Third slide"/>
+              </Carousel.Item>
+      )
+}
 
   render(){
-    const {char:{id, title, description, price, links}} = this.state;
-    
+    const {char:{room_number, title, description, price, links}} = this.state;  
     
     return(
-      <>
-
-        
-      
-       <svg className={id === 1 ? 'changeroom_right hidden': 'changeroom_right'}
+      <> 
+       <svg className={room_number === 1 ? 'changeroom_right hidden': 'changeroom_right'}
         onClick={this.changeRoomReverse} viewBox="0 0 9 14">
             <path className="svg-arrow" d="M6.660,8.922 L6.660,8.922 L2.350,13.408 
             L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 
             L6.660,8.922 Z" />
         </svg>
-
-
-      <svg className={id === 4 ? 'changeroom_left hidden': 'changeroom_left'} viewBox="0 0 9 14"
-        onClick={this.changeRoom}>
-        <path className="svg-arrow" d="M6.660,8.922 L6.660,8.922 
-        L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515
-         L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
-      </svg> 
+        <svg className={room_number === 4 ? 'changeroom_left hidden': 'changeroom_left'} viewBox="0 0 9 14"
+          onClick={this.changeRoom}>
+          <path className="svg-arrow" d="M6.660,8.922 L6.660,8.922 
+          L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515
+          L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
+        </svg> 
 
     
-      <div className="block_wr">
-
-        <h5 className="carousel_title" id = "carousel-rooms">
-        </h5>
+    <div className="block_wr">
+      <h5 className="carousel_title" id = "carousel-rooms"></h5>
         <div className="block_rooms">
-
-        
           <div className="block_rooms_img">
             <Carousel>
-              <Carousel.Item>
-                <img
-                  className="d-block"
-                  src = {img1} /* links ? links[0].link : null */
-                  alt = {title}/>  
-              </Carousel.Item>
-              
+            {links != null ? this.CarouselItemHTML(links[0].link) : null}
+            {links != null ? this.CarouselItemHTML(links[1].link) : null}
+            {links != null ? this.CarouselItemHTML(links[2].link) : null}
+            {links != null ? this.CarouselItemHTML(links[3].link) : null}
+             
+              {/* 
+
                <Carousel.Item>
                 <img
                   className="d-block"
-                  src={img1} /* links ? links[1].link : null */
+                  src = {links ? links[0].link : null} 
+                  alt = 'sdfdsf'/>  
+              </Carousel.Item>
+
+               <Carousel.Item>
+                <img
+                  className="d-block"
+                  src={links ? links[1].link : null} 
                   alt="Second slide"/>
               </Carousel.Item>
-              
+
               <Carousel.Item>
                 <img
                   className="d-block"
-                  src={img1} /* links ? links[3].link : null */
+                  src={links ? links[2].link : null} 
                   alt="Third slide"/>
-              </Carousel.Item> 
+              </Carousel.Item>  */}
+
+              
           </Carousel>
-        </div>
-  
+
+          </div>
+
         <div className="block_rooms_text_content">
             <h6 className="title_content title">
-                Room
-                {/* {title} */}
+                Комната №{room_number}
             </h6>
             <p className="text_content description">
-               jdkjwqlkjdlkwjdlk
-               {/* {description} */}
+          `` {description} 
             </p>
            
-            {/* <div className="person">
-             <div className="persons_max">
-                <div 
-              className="person_icon">
-            </div>
-            <p>5 спальных мест</p>
-            </div>
-            
-            <p className="prices">
-              Цена: {price} рублей за ночь {id}
-            </p>
-            </div> */}        
+                   
       </div>
       <div className="block_wr_prices">
         <div className="wr_prices_text">
@@ -136,11 +130,11 @@ changeState = (char) =>{
         </div>
         <button className="carousel_button"> Забронировать</button>
       </div>
-      </div> 
+    </div> 
     
     
     
-    </div>
+  </div>
 
 
     </>

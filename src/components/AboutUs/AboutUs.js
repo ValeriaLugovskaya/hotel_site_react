@@ -8,19 +8,19 @@ const AboutUs = () =>{
        <>
        <h2>О нас</h2>
 
-       <div className="wrapper_block">
+       <div className="wrapper_block" id = "aboutus">
        <div className="wrapper">
        
-        <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
+        <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat,</p>
        <img className='wrapper_img' src={aboutUs_img} alt="ss" />
       </div>
       
-      <div class="wrapper">
+      <div className="wrapper">
         <img className='wrapper_img sec' src={aboutUs_img} alt="ss" />
-       <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
+       <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat,</p>
       </div>
-      <div class="wrapper">
-        <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat, maxime dignissimos accusamus veniam consequuntur architecto obcaecati porro quisquam quam ducimus, officia veritatis nulla facere repellendus explicabo. Animi quaerat dolorum nemo eius officiis ipsa vitae illo vero, perspiciatis ducimus porro voluptate quae alias dolorem, voluptatem fugit maxime vel repellat praesentium?</p>
+      <div className="wrapper">
+        <p className="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo fugiat,</p>
        <img className='wrapper_img' src={aboutUs_img} alt="ss" />
       </div>
       </div>

@@ -12,7 +12,8 @@ class BookingRooms extends Component{
             middleName: '',
             phone: '',
             startDate: '',
-            lastDate: ''
+            lastDate: '',
+            roomNumber: ''
         }
     }
 
@@ -25,30 +26,32 @@ class BookingRooms extends Component{
 
     postFun(){
         const req = {
-            method: 'post',  
+            method: 'POST',  
                 headers: {  
-                "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"  
+                "Content-type": "application/json"  
                 }, 
             body: JSON.stringify({ 
                 person: {
-                phone_number:this.state.phone,
-                first_name: this.state.firstName,
-                last_name: this.state.lastName,
-                father_name: this.state.middleName    
-            },
-            room: 2,
-            dates:{
-                arrive_date: "2022-08-06",
-                leave_date: "2022-09-07"
-            }
+                    phone_number: this.state.phone,
+                    first_name: this.state.firstName,
+                    last_name:  this.state.lastName,
+                    father_name: this.state.middleName    
+                },
+                room: this.state.roomNumber,
+                dates:{
+                    arrive_date: this.state.startDate,
+                    leave_date: this.state.lastDate
+                }
         })
     }
     console.log(req.body);
 
-        fetch('https://jsonplaceholder.typicode.com/posts', {req}) 
-          .then(response => response.json())
-          .then(json => console.log(json));
+        fetch('http://127.0.0.1:8000/paradise/booking/add', req) 
+          .then(response => response.json());
   }
+
+
+  
   
     onSubmit = (e) => {
         console.log(this.state.firstName);
@@ -59,13 +62,20 @@ class BookingRooms extends Component{
             middleName: '',
             phone: '',
             startDate: '',
-            lastDate: ''
+            lastDate: '',
+            roomNumber: ''
         })
         this.postFun();
     }
 
+    onRadioChange = (e) =>{
+        this.setState({
+            roomNumber: e.target.value
+        })
+    }
+
     render(){
-        const {firstName, lastName, middleName, phone, startDate, lastDate} = this.state;
+        const {firstName, lastName, middleName, phone, startDate, lastDate, roomNumber} = this.state;
      return(
         <div className="book_block" id = "booking">
             
@@ -128,6 +138,50 @@ class BookingRooms extends Component{
                                 onChange={this.onValueChange}/> 
                         </label>   
                         <br/>
+                        
+                       
+                        <label> Выберите номер комнаты
+                        <br/>
+                        <form>
+                        <label for='1'>№1</label> 
+                        <input 
+                                type="radio"
+                                id = '1'
+                                className="radioButton"
+                                value= '1' 
+                                onChange = {this.onRadioChange}
+                                checked={roomNumber === '1' ? true : false}/> 
+                        
+                        <label for='2'>№2</label>
+                         <input 
+                                id = '2'
+                                type="radio"
+                                className="radioButton"
+                                value= '2' 
+                                onChange = {this.onRadioChange}
+                                checked={roomNumber === '2' ? true : false}/>
+                         
+                         <label for='3'>№3</label>
+                         <input 
+                                 id = '3'
+                                type="radio"
+                                className="radioButton"
+                                value= '3' 
+                                onChange = {this.onRadioChange}
+                                checked={roomNumber === '3' ? true : false}/>
+                         <label for='4'>№4</label>
+                        <input
+                                 id = '4' 
+                                type="radio"
+                                className="radioButton"
+                                value= '4' 
+                                onChange = {this.onRadioChange}
+                                checked={roomNumber === '4' ? true : false}/>
+                        </form>
+
+                        </label> 
+                        
+                        <br/>
                         <label> Дата отъезда
                         
                             <input 
@@ -137,7 +191,8 @@ class BookingRooms extends Component{
                                 name="lastDate"
                                 value={lastDate} 
                                 onChange={this.onValueChange}/> 
-                        </label>   
+                        </label>
+
                         <br/>
                             <label> Номер телефона
                             <InputMask 
