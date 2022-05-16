@@ -7,7 +7,6 @@
     padding-bottom: 20px;
 }
 
-
 .bl{
     position: relative;
 }
@@ -34,7 +33,6 @@
     height: 80px;
 }
 
-
 .changeroom_left path,
 .changeroom_right path {
     fill: #BFE2FF;
@@ -51,8 +49,6 @@
 .changeroom_right path:hover {
     fill: #659db3;
 }
-
-
 
  .block_rooms{
     display:flex;
@@ -73,7 +69,6 @@
     }
 } 
 
-
 .block_wr_prices{
     display: flex;
     flex-wrap: wrap;
@@ -85,11 +80,8 @@
     padding-top:1%;
     max-width: 100%;
     text-align: center;
-    align-items: start;
-    
+    align-items: start;  
 }
-
-
 
 .wr_prices_text{
     font: 1.7em sans-serif;
@@ -101,15 +93,14 @@ span{
 }
 
 .carousel_button{
-    height: 10%;
-    color: $font;
-    width: 30%;
-    box-shadow:none;
     background: $orange;
-    font-weight: 0;
-
+        width: 50%;
+        height: 60%;
+        margin: 2% 5%;
+        border:1px solid white;
+        border-radius: 10px ;
+        color:white;
 }
-
 
 %titles{
     text-align: center;
@@ -129,7 +120,11 @@ span{
 
 
 
-@media (max-width: 1199.98px) {  }
+@media (min-width: 1199.98px) { 
+    .carousel_button{
+        width: 30%;
+    }
+ }
 
 @media (max-width: 991.98px) {
     .block_wr{
@@ -149,9 +144,7 @@ span{
         }
     }
   }
-  .carousel_button{
-      width:40%;
-  }
+  
 
 @media (max-width: 767.98px) { 
     .block_wr{

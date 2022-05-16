@@ -20,7 +20,11 @@
         return {
                 room_number: char.room_number,
                 description: char.description,
-                price: char.price.price,
+                price: {
+                    start_date: char.start_date,
+                    finish_date: char.finish_date,
+                    price: char.price
+                },
                 links: [
                     {link: char.links[0].link},
                     {link: char.links[1].link},

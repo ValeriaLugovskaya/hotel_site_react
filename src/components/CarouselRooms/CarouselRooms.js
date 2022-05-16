@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import img1 from "../../resources/img/m.jpg";
 import { Component } from 'react';
 import HostelService from '../../services/HostelService';
+import { Alert } from 'bootstrap';
 
 class CarouselRooms extends Component{
 
@@ -12,13 +13,22 @@ class CarouselRooms extends Component{
 
 componentDidMount(){
     this.chooseRoom(1);
+   
 }
 
 hotelService = new HostelService();
- 
+
 changeState = (char) =>{
-    this.setState({char});  
-    console.log(this.state.char);
+    this.setState({char}); 
+    console.log(char.price.price);
+    
+}
+
+roomPrice = () =>{
+   return(
+  this.state.char.price.start_date, this.state.char.price.finish_date,
+      this.state.char.price.price
+  ) 
 }
 
 chooseRoom = (room_number) =>{
@@ -35,7 +45,7 @@ chooseRoomReverse = (room_number) =>{
   this.hotelService
   .getRoom(room_number-1)
   .then(this.changeState)
-    }
+}
 
 changeRoom = () =>{
       this.state.char.room_number === 4 ? this.chooseRoom(0):this.chooseRoom(this.state.char.room_number); 
@@ -57,8 +67,21 @@ CarouselItemHTML(lin){
 }
 
   render(){
-    const {char:{room_number, title, description, price, links}} = this.state;  
-    
+    const {char:{room_number, price, title, description, links}} = this.state;
+    let startDate = price ? price.price.start_date: null;
+    let finishDate = price ? price.price.finish_date: null;
+    /* a = new Date(a)
+    a.setMonth(a-1);
+    const b = new Date(a).toLocaleString('ru', {month: 'long'}); 
+ */
+    startDate = Date.parse(startDate);
+    let startMonth = new Date(startDate);
+    let finishMonth = new Date(finishDate);
+
+    finishMonth = new Date(finishDate).toLocaleString('ru', {month: 'long'});
+    startMonth = new Date(startDate).toLocaleString('ru', {month: 'long'}); 
+
+    console.log(startMonth);
     return(
       <> 
        <svg className={room_number === 1 ? 'changeroom_right hidden': 'changeroom_right'}
@@ -92,25 +115,9 @@ CarouselItemHTML(lin){
                   className="d-block"
                   src = {links ? links[0].link : null} 
                   alt = 'sdfdsf'/>  
-              </Carousel.Item>
-
-               <Carousel.Item>
-                <img
-                  className="d-block"
-                  src={links ? links[1].link : null} 
-                  alt="Second slide"/>
-              </Carousel.Item>
-
-              <Carousel.Item>
-                <img
-                  className="d-block"
-                  src={links ? links[2].link : null} 
-                  alt="Third slide"/>
-              </Carousel.Item>  */}
-
+              </Carousel.Item> */}
               
           </Carousel>
-
           </div>
 
         <div className="block_rooms_text_content">
@@ -118,14 +125,18 @@ CarouselItemHTML(lin){
                 Комната №{room_number}
             </h6>
             <p className="text_content description">
-          `` {description} 
+
+          {description}
             </p>
            
                    
       </div>
       <div className="block_wr_prices">
         <div className="wr_prices_text">
-        <p> Цена (май - июль): <br className='br_prices'/> {price} рублей <br/>
+        <p> Цена за {startMonth} - {finishMonth}: <br className='br_prices'/>
+        { price ? price.price.price: null } 
+      
+        ₽ <br/>
         <span>за ночь</span></p>
         </div>
         <button className="carousel_button"> Забронировать</button>

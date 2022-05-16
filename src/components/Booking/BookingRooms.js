@@ -143,7 +143,7 @@ class BookingRooms extends Component{
                         <label> Выберите номер комнаты
                         <br/>
                         <form>
-                        <label for='1'>№1</label> 
+                        <label htmlFor='1'>№1</label> 
                         <input 
                                 type="radio"
                                 id = '1'
@@ -152,7 +152,7 @@ class BookingRooms extends Component{
                                 onChange = {this.onRadioChange}
                                 checked={roomNumber === '1' ? true : false}/> 
                         
-                        <label for='2'>№2</label>
+                        <label htmlFor='2'>№2</label>
                          <input 
                                 id = '2'
                                 type="radio"
@@ -161,7 +161,7 @@ class BookingRooms extends Component{
                                 onChange = {this.onRadioChange}
                                 checked={roomNumber === '2' ? true : false}/>
                          
-                         <label for='3'>№3</label>
+                         <label htmlFor='3'>№3</label>
                          <input 
                                  id = '3'
                                 type="radio"
@@ -169,7 +169,7 @@ class BookingRooms extends Component{
                                 value= '3' 
                                 onChange = {this.onRadioChange}
                                 checked={roomNumber === '3' ? true : false}/>
-                         <label for='4'>№4</label>
+                         <label htmlFor='4'>№4</label>
                         <input
                                  id = '4' 
                                 type="radio"
