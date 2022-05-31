@@ -21,12 +21,11 @@
   .one{
     flex: 1 1 200px;
     padding:10px;
-   
-
   }
 
   h2{
      text-align: center;
+     padding-top:5%;
      color: $orange;
   }
 
@@ -42,9 +41,7 @@
     .wrapper{
         display: flex;
         flex-direction: column;
-        
     }
-
         .wrapper_img{
             min-width: 80%;
             max-width: 100%;
@@ -59,10 +56,8 @@
         padding-top: 5%;
 
     }
-
     .sec{
-        order:10;
-    }
+        order:10;}
     .one{
         overflow: hidden;
         width:100%;

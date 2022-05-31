@@ -21,7 +21,6 @@ class BookingRooms extends Component{
         this.setState({
             [e.target.name] : e.target.value
         })
-      
     }
 
     postFun(){
@@ -44,17 +43,14 @@ class BookingRooms extends Component{
                 }
         })
     }
-    console.log(req.body);
 
-        fetch('http://127.0.0.1:8000/paradise/booking/add', req) 
+
+        fetch('http://127.0.0.1:8000/paradise/booking/add', req)
+             
           .then(response => response.json());
   }
 
-
-  
-  
     onSubmit = (e) => {
-        console.log(this.state.firstName);
         e.preventDefault();
         this.setState({
             firstName: '',
@@ -76,75 +72,64 @@ class BookingRooms extends Component{
 
     render(){
         const {firstName, lastName, middleName, phone, startDate, lastDate, roomNumber} = this.state;
-     return(
-        <div className="book_block" id = "booking">
-            
-            <div className="book_block_textcontent">
-            
-            <h4 className="textcontent_title">
-                    Забронировать номер
-            </h4>    
-                <p className="textcontent_text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,<br/>
-                     temporibus fugit, facilis voluptas autem quia fuga impedit similique<br/>
-                      voluptatibus quaerat fugiat quas quod reprehenderit<br/> maiores pariatur
-                       excepturi culpa, numquam tempora?
-                </p>
-            </div>
-    
-            <form
+        return(
+            <div className="book_block" id = "booking">
+                <div className="book_block_textcontent">
+                    <h4 className="textcontent_title">
+                            Забронировать номер
+                    </h4>    
+                    <p className="textcontent_text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,<br/>
+                        temporibus fugit, facilis voluptas autem quia fuga impedit similique<br/>
+                        voluptatibus quaerat fugiat quas quod reprehenderit<br/> maiores pariatur
+                        excepturi culpa, numquam tempora?
+                    </p>
+                </div>
+                
+                <form
                 className="book_block_form"
                 onSubmit = {this.onSubmit}>                                
-                    <fieldset>
-                        <label> Введите имя
-                        
-                            <input type="text"
-                                className="form-control new-post-label"
-                                placeholder="Введите своё имя"
-                                name="firstName"
-                                value={firstName} 
-                                onChange={this.onValueChange}/>
-                        </label>
-                        <br/>
-                        <label> Фамилия
-                        
-                            <input type="text"
-                            title = 'esfbdsbfh'
-                                className="form-control new-post-label"
-                                placeholder="Введите фамилию"
-                                name="lastName"
-                                value={lastName} 
-                                onChange={this.onValueChange}/>
-                        </label>
-                        <br/>
-                        <label> Отчество
-                            
-                            <input type="text"
-                                className="form-control new-post-label"
-                                placeholder="Введите отчество"
-                                name="middleName"
-                                value={middleName} 
-                                onChange={this.onValueChange}/>
-                        </label>
-                        <br/>
-                        <label> Дата заезда
-                        
-                            <input 
-                                type="date"
-                                className="form-control"
-                                placeholder="Дата заезда"
-                                name="startDate"
-                                value={startDate} 
-                                onChange={this.onValueChange}/> 
-                        </label>   
-                        <br/>
-                        
-                       
-                        <label> Выберите номер комнаты
-                        <br/>
-                        <form>
-                        <label htmlFor='1'>№1</label> 
+                </form>
+                <fieldset>
+                    <label> Введите имя
+                        <input type="text"
+                            className="form-control new-post-label"
+                            placeholder="Введите своё имя"
+                            name="firstName"
+                            value={firstName} 
+                            onChange={this.onValueChange}/>
+                    </label><br/>
+                    <label> Фамилия
+                        <input type="text"
+                        title = 'esfbdsbfh'
+                            className="form-control new-post-label"
+                            placeholder="Введите фамилию"
+                            name="lastName"
+                            value={lastName} 
+                            onChange={this.onValueChange}/>
+                    </label><br/>
+                    <label> Отчество
+                        <input type="text"
+                            className="form-control new-post-label"
+                            placeholder="Введите отчество"
+                            name="middleName"
+                            value={middleName} 
+                            onChange={this.onValueChange}/>
+                    </label><br/>
+                    <label> Дата заезда
                         <input 
+                            type="date"
+                            className="form-control"
+                            placeholder="Дата заезда"
+                            name="startDate"
+                            value={startDate} 
+                            onChange={this.onValueChange}/> 
+                    </label><br/>
+                    <label> Выберите номер комнаты
+                    <br/>
+                    <form className='form_radio_buttons'>
+                        <label htmlFor='1'>№1</label> 
+                            <input 
                                 type="radio"
                                 id = '1'
                                 className="radioButton"
@@ -153,70 +138,58 @@ class BookingRooms extends Component{
                                 checked={roomNumber === '1' ? true : false}/> 
                         
                         <label htmlFor='2'>№2</label>
-                         <input 
+                            <input 
                                 id = '2'
                                 type="radio"
                                 className="radioButton"
                                 value= '2' 
                                 onChange = {this.onRadioChange}
                                 checked={roomNumber === '2' ? true : false}/>
-                         
-                         <label htmlFor='3'>№3</label>
-                         <input 
-                                 id = '3'
+                            <br/>
+                        <label htmlFor='3'>№3</label>
+                            <input 
+                                    id = '3'
                                 type="radio"
                                 className="radioButton"
                                 value= '3' 
                                 onChange = {this.onRadioChange}
                                 checked={roomNumber === '3' ? true : false}/>
-                         <label htmlFor='4'>№4</label>
-                        <input
-                                 id = '4' 
+                        <label htmlFor='4'>№4</label>
+                            <input
+                                    id = '4' 
                                 type="radio"
                                 className="radioButton"
                                 value= '4' 
                                 onChange = {this.onRadioChange}
                                 checked={roomNumber === '4' ? true : false}/>
-                        </form>
-
-                        </label> 
-                        
-                        <br/>
-                        <label> Дата отъезда
-                        
-                            <input 
-                                type="date"
-                                className="form-control new-post-label"
-                                placeholder="Дата отъезда"
-                                name="lastDate"
-                                value={lastDate} 
-                                onChange={this.onValueChange}/> 
-                        </label>
-
-                        <br/>
-                            <label> Номер телефона
-                            <InputMask 
-                                mask='(+7) 999 999-99-99' 
-                                className="form-control new-post-label"
-                                placeholder='Номер телефона'
-                                value={phone} 
-                                name = "phone"
-                                onChange={this.onValueChange}>
-                            </InputMask>
-                        
-                            <button type="submit" onClick={ e => this.onSubmit(e) }
-                           className="book_block_btn">Добавить</button>
-                        </label>   
-                           
-                    </fieldset>  
-                           <br/>
-           
-        </form>
-    </div>
-    
-    )
-}
-}
+                    </form>
+                    </label><br/>
+                    <label> Дата отъезда
+                        <input 
+                            type="date"
+                            className="form-control new-post-label"
+                            placeholder="Дата отъезда"
+                            name="lastDate"
+                            value={lastDate} 
+                            onChange={this.onValueChange}/> 
+                    </label><br/>
+                        <label> Номер телефона
+                        <InputMask 
+                            mask='(+7) 999 999-99-99' 
+                            className="form-control new-post-label"
+                            placeholder='Номер телефона'
+                            value={phone} 
+                            name = "phone"
+                            onChange={this.onValueChange}>
+                        </InputMask>
+                    
+                        <button type="submit" onClick={ e => this.onSubmit(e) }
+                        className="book_block_btn">Добавить</button>
+                    </label>          
+                </fieldset><br/>
+        </div>
+        )
+}}
 
 export default BookingRooms;
 

@@ -19,19 +19,20 @@
     visibility:hidden;
 }
 
-.changeroom_left{
-    margin: 18% 0;
+
+ .changeroom_left{
+    left:30%; 
     position: absolute;
-    width: 50px;
+    width: 45px;
     height: 80px;
 }
 
 .changeroom_right {
+    right: 30%;
     position: absolute;
-    margin: 18% 0 0 95%;
-    width: 50px;
+    width: 45px;
     height: 80px;
-}
+} 
 
 .changeroom_left path,
 .changeroom_right path {
@@ -47,7 +48,7 @@
 
 .changeroom_left path:hover,
 .changeroom_right path:hover {
-    fill: #659db3;
+    fill: #12526b;
 }
 
  .block_rooms{
@@ -78,9 +79,7 @@
     height: 50%;
     background-color: #D6F1FC;
     padding-top:1%;
-    max-width: 100%;
-    text-align: center;
-    align-items: start;  
+    text-align: center; 
 }
 
 .wr_prices_text{
@@ -94,12 +93,12 @@ span{
 
 .carousel_button{
     background: $orange;
-        width: 50%;
-        height: 60%;
-        margin: 2% 5%;
-        border:1px solid white;
-        border-radius: 10px ;
-        color:white;
+    width: 50%;
+    height: 60%;
+    margin: 2% 5%;
+    border:1px solid white;
+    border-radius: 10px ;
+    color:white;
 }
 
 %titles{
@@ -110,15 +109,12 @@ span{
 .carousel_title{
     @extend %titles;
     padding: 1% 0;
+    color:$font;
 }
 
 .title_content{
-    @extend %titles;
-    
+    @extend %titles; 
 }
-
-
-
 
 @media (min-width: 1199.98px) { 
     .carousel_button{
@@ -129,8 +125,8 @@ span{
 @media (max-width: 991.98px) {
     .block_wr{
         background-color: $block_bg;
-    box-shadow: 0 0 10px $box_shadow;
-    border-radius: 10px;
+        box-shadow: 0 0 10px $box_shadow;
+        border-radius: 10px;
     }
     .block_rooms{
         flex-wrap:wrap;
@@ -139,18 +135,18 @@ span{
             width: 100%;
             padding-top:5%;
         }
-    &_img{
-        max-width: 100%;
+        &_img{
+            max-width: 100%;
         }
     }
-  }
+}
   
 
 @media (max-width: 767.98px) { 
     .block_wr{
         background-color: $block_bg;
-    box-shadow: 0 0 10px $box_shadow;
-    border-radius: 10px;
+        box-shadow: 0 0 10px $box_shadow;
+        border-radius: 10px;
     }
     .block_rooms{
         flex-wrap:wrap;
@@ -164,11 +160,6 @@ span{
         }
     }
  }
-
- .br_prices{
-    display: none;
-  }
-
 
 @media (max-width: 575.98px) { 
      .block_wr{
@@ -193,7 +184,6 @@ span{
      margin-top: 10%;
     }
 
-
     .br_prices{
         display: initial;
       }
@@ -205,7 +195,8 @@ span{
     }
 
     .changeroom_left{
-        margin: 27% 0 0 1%;
+        left:2%;
+        margin-top: 50%;
         position: absolute;
         width: 30px;
         height: 50px;
@@ -213,8 +204,13 @@ span{
     
     .changeroom_right {
         position: absolute;
-        margin: 27% 1% 0 91%;
+        right:2%;
+        margin-top: 50%;
         width: 30px;
         height: 50px;
+    }
+
+    .carousel_title{
+        color:black;
     }
  }

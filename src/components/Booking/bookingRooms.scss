@@ -1,16 +1,14 @@
-
 @import  '../../style/variables';
 
+    fieldset{
+        padding:30% 0 0 0 ;
+    }
 
-fieldset{
-    padding:30% 0 0 0 ;
-}
+    .radioButton{
+        margin-right: 5%;
+    }
 
-.radioButton{
-    margin-right: 5%;
-}
-
-.book_block{
+    .book_block{
         display: flex;
         justify-content: center;
         background: url('../../resources/img/booking_img_bg.jpg') rgb(255, 255, 255);
@@ -22,18 +20,15 @@ fieldset{
         overflow-y: hidden;
         align-items: center;
         margin: 0;
-        
-
         &_textcontent{
-            padding-right: 10%;
-            
+            padding-right: 10%;            
         }
     }
 
-.form-control{
-    font-size: 100px;
-   
-}
+    .form-control{
+        font-size: 100px;
+    }
+
     h4{ 
         color: $font;
     }
@@ -52,10 +47,9 @@ fieldset{
         
     }
 
-    
-.book_block_form{
-    padding-top: 5%;
-}
+    .book_block_form{
+        padding-top: 5%;
+    }
 
     button.book_block_btn{
         background: $orange;
@@ -64,76 +58,89 @@ fieldset{
         border:1px solid white;
         border-radius: 10px ;
         color: white;
+        &:hover{
+            content: '';
+            color:black;
+        }
     }
 
+@media (max-width: 700px) {
 
-    
-    @media (max-width: 459px) {
+    .book_block_form{
+        padding-top: 0;
+    }
 
-       
-        .book_block{
-            flex-direction: row;
-            align-items:center;
-            justify-content: center;
-            flex-wrap: wrap;
-            height: 600px;  
-            background: rgb(128, 195, 222);
-            box-shadow: 0 0 10px $box_shadow;
-            border-radius: 5px;
-            overflow: hidden;
-            &_form{  
-                
-                width: 100%;
-                &label{
-                    text-align: center;
-                    padding-bottom: 10%;
-                    
-                }
-            }    
-            &_textcontent{
-                padding: 0%;
-                color:black;
-
-                
+    .book_block{
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #D6F1FC;
+        box-shadow: 0 0 10px $box_shadow;
+        border-radius: 10px;
+        height: fit-content;
+        &_form{             
+            width: 100%;
+            &label{
+                text-align: center;
+                padding-bottom: 10%;
             }
+        }    
+        &_textcontent{
+            padding: 0%;
+            color:black; 
         }
-        .textcontent_title{
-            font-size: 1.4em;
-        }
+    }
 
-        h4{text-align: center; padding-bottom: 10px;
-        color:black;}
+    .textcontent_title{
+        padding-top:10%;
+        font-size: 1.4em;
+    }
 
-        .textcontent_text, label{
-            color:black;
-            font-size: large;
-        }
-    
-   .book_block_btn{
-            margin:10px auto;
-            justify-self:center;
-            width:60%;
-        } 
-    
-        button{
-            background: rgb(95, 121, 237);
-            
-        }
+    h4{
+        text-align: center; 
+        padding-bottom: 10px;
+        color:black;
+    }
 
-        .textcontent{
-            padding:0;
-            margin:0;
-            height: 0;
-            
-            &_text{
-                display:none;
-                color: black;
-            }
+    .textcontent_text, label{
+        color:black;
+        font-size: large;
+    }
+
+    form{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .book_block_btn{
+        margin:10px auto;
+        justify-self:center;
+        width:60%;
+    } 
+
+    button{
+        background: rgb(95, 121, 237);    
+    }
+    .textcontent{
+        padding:0;
+        margin:0;
+        height: 0;   
+        &_text{
+            display:none;
+            color: black;
         }
-        label{
-            text-align: center;
-            width:100%;
-            padding: 0 10%;
-        }
+    }
+
+    label{
+        text-align: center;
+        width:100%;
+        padding: 0 5%;
+    }   
     
+    fieldset{
+        width: 100%;
+    }
+
     }

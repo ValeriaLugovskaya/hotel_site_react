@@ -19,17 +19,7 @@ class Navigation extends Component{
         });
     }
 
-
-     a = () =>{
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-          });
-    }
-
     render (){
-
         return(
         <>
             <nav className="NavigationBlock" id = "Up">
@@ -41,21 +31,22 @@ class Navigation extends Component{
            
 
             <div className={this.state.menuActiveStatus ? 'menu active': 'menu'}>
-            <div className="blur"/>
-            <div className="menu__content">
-                <ul> 
-                <li><a href="#aboutus" className="href">О нас</a></li>
-                <li><a href="#carousel-rooms" className="href">Номера</a></li>
-                <li><a href="#booking" className="href">Бронирование</a></li>
-                <li><a href="#contacts" className="href">Контакты</a></li> 
-            </ul>    
-            </div>
+                <div className="menu__content">
+                    <ul> 
+                    <li><a href="#aboutus" onClick = {this.menuStatus}
+                    className="href">О нас</a></li>
+                    <li><a href="#carousel-rooms" 
+                    onClick = {this.menuStatus}
+                    className="href">Номера</a></li>
+                    <li><a href="#booking"
+                    onClick = {this.menuStatus}
+                     className="href">Бронирование</a></li>
+                    <li><a href="#contacts"
+                    onClick = {this.menuStatus}
+                     className="href">Контакты</a></li> 
+                </ul>    
+                </div>
         </div>
-
-            
-{/* 
-            <button id="upper"
-            onClick={this.a}> </button> */}
         </>
         )
     }
