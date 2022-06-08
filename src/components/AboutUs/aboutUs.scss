@@ -1,6 +1,5 @@
 @import '../../style/variables.scss';
 
-
 .wrapper{
     max-width: 80%;
     margin: 20px auto;
@@ -36,7 +35,6 @@
         }
   }
 
-
   @media (max-width: 750px){
     .wrapper{
         display: flex;
@@ -54,10 +52,11 @@
 
     h2{
         padding-top: 5%;
-
     }
+
     .sec{
         order:10;}
+
     .one{
         overflow: hidden;
         width:100%;
@@ -72,6 +71,5 @@
         padding-top: 2%;
         flex-grow: 0;
     }
-
 }
 

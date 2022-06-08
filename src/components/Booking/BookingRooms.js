@@ -43,10 +43,7 @@ class BookingRooms extends Component{
                 }
         })
     }
-
-
-        fetch('http://127.0.0.1:8000/paradise/booking/add', req)
-             
+        fetch('http://127.0.0.1:8000/paradise/booking/add', req)        
           .then(response => response.json());
   }
 
@@ -68,6 +65,16 @@ class BookingRooms extends Component{
         this.setState({
             roomNumber: e.target.value
         })
+    }
+
+    validatingFields = (e) =>{
+        let regex = /[!0123456789@#$№%^&*+=()_]$/g;
+        
+        if ((e.target.name === 'middleName')&&(regex.test(e.target.value))){
+            Document.render(
+                <p>wqeqwe</p>
+            )
+        }
     }
 
     render(){
@@ -110,6 +117,7 @@ class BookingRooms extends Component{
                     </label><br/>
                     <label> Отчество
                         <input type="text"
+                            onKeyUp={this.validatingFields}
                             className="form-control new-post-label"
                             placeholder="Введите отчество"
                             name="middleName"
@@ -170,6 +178,8 @@ class BookingRooms extends Component{
                             className="form-control new-post-label"
                             placeholder="Дата отъезда"
                             name="lastDate"
+                            max="2022-06-04" 
+                            min="2012-05-29"
                             value={lastDate} 
                             onChange={this.onValueChange}/> 
                     </label><br/>
