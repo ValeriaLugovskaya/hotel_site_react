@@ -19,27 +19,27 @@ changeState = (char) =>{
     this.setState({char}); 
 }
 
-chooseRoom = (room_number) =>{
+chooseRoom = (id) =>{
       this.hotelService
-      .getRoom(room_number)
+      .getRoom(id)
       .then(this.changeState)
 } 
 
-chooseRoomReverse = (room_number) =>{
+chooseRoomReverse = (id) =>{
       this.setState({
-        room_number:--room_number
+        id:--id
 });
   this.hotelService
-  .getRoom(room_number-1)
+  .getRoom(id-1)
   .then(this.changeState)
 }
 
 changeRoom = () =>{
-      this.state.char.room_number === 4 ? this.chooseRoom(0):this.chooseRoom(this.state.char.room_number); 
+      this.state.char.id === 4 ? this.chooseRoom(0):this.chooseRoom(this.state.char.id); 
 } 
 
 changeRoomReverse = () =>{
-      this.chooseRoomReverse(this.state.char.room_number);
+      this.chooseRoomReverse(this.state.char.id);
 } 
 
 CarouselItemHTML(lin){
@@ -54,7 +54,7 @@ CarouselItemHTML(lin){
 }
 
 render(){
-    const {char:{room_number, price, description, links}} = this.state;
+    const {char:{id, price, description, links}} = this.state;
     let startDate = price ? price.price.start_date: null;
     let finishDate = price ? price.price.finish_date: null;
     startDate = Date.parse(startDate);
@@ -69,7 +69,7 @@ render(){
 		<div className="block_wr">
 		<div className="arrows_change_rooms">
 				<div className="arrows_change_rooms_left">
-					<svg className={room_number === 1 ? 'changeroom_left hidden': 'changeroom_left'} viewBox="0 0 9 14"
+					<svg className={id === 1 ? 'changeroom_left hidden': 'changeroom_left'} viewBox="0 0 9 14"
 						onClick={this.changeRoomReverse}>
 						<path className="svg-arrow" d="M6.660,8.922 L6.660,8.922 
 						L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515
@@ -77,7 +77,7 @@ render(){
 					</svg> 
 				</div>
 				<div className="arrows_change_rooms_rigth">
-					<svg className={room_number === 4 ? 'changeroom_right hidden': 'changeroom_right'}
+					<svg className={id === 4 ? 'changeroom_right hidden': 'changeroom_right'}
 						onClick={this.changeRoom} viewBox="0 0 9 14">
 							<path className="svg-arrow" d="M6.660,8.922 L6.660,8.922 L2.350,13.408 
 							L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 
@@ -104,7 +104,7 @@ render(){
 
 				<div className="block_rooms_text_content">
 					<h6 className="title_content title">
-						Комната №{room_number}
+						Комната №{id}
 					</h6>
 					<p className="text_content description">
 						{description}
