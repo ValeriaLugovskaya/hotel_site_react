@@ -4,6 +4,15 @@
     
     background: url('../../resources/img/main12.png');
     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size:cover;
     background-attachment: fixed;
+}
+
+
+@media (max-width: 400px){
+    .main_img{
+        background-attachment:scroll;
+    }
 }
