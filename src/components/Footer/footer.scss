@@ -21,12 +21,18 @@
     content: '        \25BC';
     }
     padding-bottom: 5%;
+    &:hover{
+        font-size: 22px;
+    }
 }
 
 .arrow_down{
     cursor: pointer;
     &:after{
     content: '          \25B2';
+    }
+    &:hover{
+        font-size: 22px;
     }
 }
 
