@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/hotel_site_react/static/css/main.7bb74d91.chunk.css",
-    "main.js": "/hotel_site_react/static/js/main.f5921307.chunk.js",
-    "main.js.map": "/hotel_site_react/static/js/main.f5921307.chunk.js.map",
-    "runtime-main.js": "/hotel_site_react/static/js/runtime-main.62d8dd61.js",
-    "runtime-main.js.map": "/hotel_site_react/static/js/runtime-main.62d8dd61.js.map",
-    "static/js/2.a723c753.chunk.js": "/hotel_site_react/static/js/2.a723c753.chunk.js",
-    "static/js/2.a723c753.chunk.js.map": "/hotel_site_react/static/js/2.a723c753.chunk.js.map",
+    "main.css": "/hotel_site_react/static/css/main.726c67ff.chunk.css",
+    "main.js": "/hotel_site_react/static/js/main.43712aa0.chunk.js",
+    "main.js.map": "/hotel_site_react/static/js/main.43712aa0.chunk.js.map",
+    "runtime-main.js": "/hotel_site_react/static/js/runtime-main.15330e12.js",
+    "runtime-main.js.map": "/hotel_site_react/static/js/runtime-main.15330e12.js.map",
+    "static/js/2.215af462.chunk.js": "/hotel_site_react/static/js/2.215af462.chunk.js",
+    "static/js/2.215af462.chunk.js.map": "/hotel_site_react/static/js/2.215af462.chunk.js.map",
     "index.html": "/hotel_site_react/index.html",
-    "static/css/main.7bb74d91.chunk.css.map": "/hotel_site_react/static/css/main.7bb74d91.chunk.css.map",
-    "static/js/2.a723c753.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.a723c753.chunk.js.LICENSE.txt",
-    "static/media/a6.66e66516.jpg": "/hotel_site_react/static/media/a6.66e66516.jpg",
-    "static/media/bookingRooms.scss": "/hotel_site_react/static/media/booking_img_bg.89c7607d.jpg",
-    "static/media/m.5ebd3acb.jpg": "/hotel_site_react/static/media/m.5ebd3acb.jpg",
+    "static/css/main.726c67ff.chunk.css.map": "/hotel_site_react/static/css/main.726c67ff.chunk.css.map",
+    "static/js/2.215af462.chunk.js.LICENSE.txt": "/hotel_site_react/static/js/2.215af462.chunk.js.LICENSE.txt",
+    "static/media/about_us2.71dc06d4.jpg": "/hotel_site_react/static/media/about_us2.71dc06d4.jpg",
+    "static/media/about_us3.0124322f.jpg": "/hotel_site_react/static/media/about_us3.0124322f.jpg",
+    "static/media/bookingRooms.scss": "/hotel_site_react/static/media/booking_img_bg.12e22360.jpg",
     "static/media/App.scss": "/hotel_site_react/static/media/main12.d234d69e.png",
-    "static/media/navigation.scss": "/hotel_site_react/static/media/upper_button.a23788b5.svg",
-    "static/media/viber_logo_icon.0d70877a.svg": "/hotel_site_react/static/media/viber_logo_icon.0d70877a.svg",
+    "static/media/telegram.7a397da9.svg": "/hotel_site_react/static/media/telegram.7a397da9.svg",
     "static/media/whatsapp_logo_icon.6b1c63f0.svg": "/hotel_site_react/static/media/whatsapp_logo_icon.6b1c63f0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.62d8dd61.js",
-    "static/js/2.a723c753.chunk.js",
-    "static/css/main.7bb74d91.chunk.css",
-    "static/js/main.f5921307.chunk.js"
+    "static/js/runtime-main.15330e12.js",
+    "static/js/2.215af462.chunk.js",
+    "static/css/main.726c67ff.chunk.css",
+    "static/js/main.43712aa0.chunk.js"
   ]
 }
