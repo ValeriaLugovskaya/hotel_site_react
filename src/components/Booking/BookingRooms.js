@@ -179,7 +179,22 @@ class BookingRooms extends Component {
             Выберите номер комнаты
             <br />
             <form className="form_radio_buttons">
-              <label htmlFor="1">№1</label>
+
+         
+            <select name="choice">
+                <option value="1"
+                onChange={this.onRadioChange}>
+                    Первая комната</option>
+                <option value="2" 
+                onChange={this.onRadioChange}>
+                    Вторая Комната</option>
+                <option value="3"
+                 onChange={this.onRadioChange}>третья комната</option>
+                <option value="4"
+                onChange={this.onRadioChange}>Четвертая комната</option>
+            </select>
+
+             {/*  <label htmlFor="1">№1</label>
               <input
                 type="radio"
                 id="1"
@@ -217,7 +232,8 @@ class BookingRooms extends Component {
                 onChange={this.onRadioChange}
                 checked={roomNumber === "4" ? true : false}
               />
-            </form>
+             */}
+             </form>
           </label>
           <br />
           <label>

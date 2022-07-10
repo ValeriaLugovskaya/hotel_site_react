@@ -104,6 +104,8 @@ button.book_block_btn {
     padding-top: 0;
   }
 
+
+
   .book_block {
     flex-direction: row;
     align-items: center;
@@ -147,6 +149,17 @@ button.book_block_btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .form_radio_buttons{
+    
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+  }
+
+  radio{
+    width: 50%;
   }
 
   .book_block_btn {
