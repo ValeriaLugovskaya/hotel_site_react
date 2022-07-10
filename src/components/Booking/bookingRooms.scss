@@ -178,9 +178,7 @@ button.book_block_btn {
     width: 100%;
   }
 
-  input {
+  input:not([type='radio']) {
     -webkit-appearance: none;
-    -webkit-font-smoothing: antialiased;
-    resize: none;
-  }
+}
 }
