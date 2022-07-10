@@ -1,216 +1,344 @@
-@import '../../style/variables.scss';
+@import "../../style/variables.scss";
 
-
-.block_wr{
-    background: #83D4F3;   
-    margin-bottom: 50px;
-    padding-bottom: 20px;
+.block_wr {
+  background: #83d4f3;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 
-.bl{
-    position: relative;
+.bl {
+  position: relative;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{
-    visibility: hidden;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  visibility: hidden;
 }
 
-.hidden{
-    visibility:hidden;
+.hidden {
+  visibility: hidden;
 }
 
-
- .changeroom_left{
-    left:30%; 
-    position: absolute;
-    width: 45px;
-    height: 80px;
+.changeroom_left {
+  left: 30%;
+  position: absolute;
+  width: 45px;
+  height: 80px;
 }
 
 .changeroom_right {
-    right: 30%;
-    position: absolute;
-    width: 45px;
-    height: 80px;
-} 
+  right: 30%;
+  position: absolute;
+  width: 45px;
+  height: 80px;
+}
 
 .changeroom_left path,
 .changeroom_right path {
-    fill: #BFE2FF;
-    stroke-width: .6;
-    stroke: #7ac3df;    
-    transition: fill 0.5s ease-out;
-    cursor: pointer;
+  fill: #bfe2ff;
+  stroke-width: 0.6;
+  stroke: #7ac3df;
+  transition: fill 0.5s ease-out;
+  cursor: pointer;
 }
 .changeroom_left {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .changeroom_left path:hover,
 .changeroom_right path:hover {
-    fill: #12526b;
+  fill: #12526b;
 }
 
- .block_rooms{
-    display:flex;
-    flex-wrap: wrap;
-    align-items:center;
-    background-color: #fff;
-    margin: 0 5%;
+.block_rooms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 5%;
 
-    &_img{max-width: 55%;}
-    & img{
-        max-width: 100%;  
-        margin: 0;
-    }
-    &_text_content{
-        font-size: 22px;
-        width: 45%;
-        padding-left: 3%;
-    }
-} 
+  &_img {
+    max-width: 55%;
+  }
+  & img {
+    max-width: 100%;
+    margin: 0;
+  }
+  &_text_content {
+    font-size: 22px;
+    width: 45%;
+    padding-left: 3%;
+    animation: 2s ease-in;
+  }
+}
 
-.block_wr_prices{
+.block_wr_prices {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  background-color: #d6f1fc;
+  padding-top: 1%;
+  text-align: center;
+}
+
+.wr_prices_text {
+  font: 1.7em sans-serif;
+}
+
+span {
+  font-size: 0.8em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.wrapper,
+.btn-groups {
+  width: 100%;
+}
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font: {
+    family: "Roboto", sans-serif; /* put your font-family */
+    size: 18px;
+  }
+  padding: 20px 0px;
+  width: 150px;
+  border: 1px solid white;
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+  background: $orange;
+  &:after {
+    content: "\f061";
+    font-family: FontAwesome;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    width:100%;
-    height: 50%;
-    background-color: #D6F1FC;
-    padding-top:1%;
-    text-align: center; 
-}
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: rgba($overlay-color, 0.3);
+    border-radius: 50% 0 0 50%;
+    transform: scale(0, 1);
+    transform-origin: right center;
+    transition: all 0.2s linear 0s;
+  }
 
-.wr_prices_text{
-    font: 1.7em sans-serif;
-}
+  &:hover {
+    text-indent: -30px;
 
-span{
-    font-size: 0.8em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.carousel_button{
-    background: $orange;
-    width: 50%;
-    height: 60%;
-    margin: 2% 5%;
-    border:1px solid white;
-    border-radius: 10px ;
-    color:white;
-}
-
-%titles{
-    text-align: center;
-    font-size: 30px;
-}
-
-.carousel_title{
-    @extend %titles;
-    padding: 1% 0;
-    color:$font;
-}
-
-.title_content{
-    @extend %titles; 
-}
-
-@media (min-width: 1199.98px) { 
-    .carousel_button{
-        width: 30%;
+    &:after {
+      transform: scale(1, 1);
+      text-indent: 0;
     }
- }
+  }
+}
+
+.left {
+  transition: all 0.2s linear 0s;
+  background: $orange;
+  &:before {
+    content: "\f060";
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: rgba($overlay-color, 0.3);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0, 1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
+  }
+  &:hover {
+    text-indent: 30px;
+
+    &:before {
+      transform: scale(1, 1);
+      text-indent: 0;
+    }
+  }
+}
+
+.choose_room_block_arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.carousel_button {
+  background: $orange;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.6em;
+  &:hover {
+    box-shadow: -7px -7px lighten($orange_invis, 20%);
+    cursor: pointer;
+    transition: 0.5s;
+
+    &::before {
+      border: 0px;
+    }
+  }
+}
+
+.arrows_change_rooms {
+  display: flex;
+  margin: 30px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.next {
+  top: 20px;
+  left: 30%;
+  position: absolute;
+}
+
+.previous {
+  top: 20px;
+  right: 30%;
+  margin-bottom: 30px;
+  position: absolute;
+}
+
+%titles {
+  text-align: center;
+  font-size: 30px;
+}
+
+.carousel_title {
+  @extend %titles;
+  padding: 1% 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: $font;
+}
+
+.title_content {
+  @extend %titles;
+}
+
+@media (min-width: 1199.98px) {
+  .carousel_button {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel_button {
+    margin: 1% 5%;
+  }
+}
 
 @media (max-width: 991.98px) {
-    .block_wr{
-        background-color: $block_bg;
-        box-shadow: 0 0 10px $box_shadow;
-        border-radius: 10px;
+  .block_wr {
+    background-color: $block_bg;
+    box-shadow: 0 0 10px $box_shadow;
+    border-radius: 10px;
+  }
+  .block_rooms {
+    flex-wrap: wrap;
+    &_text_content {
+      font-size: 22px;
+      width: 100%;
+      padding-top: 5%;
     }
-    .block_rooms{
-        flex-wrap:wrap;
-        &_text_content{
-            font-size: 22px;
-            width: 100%;
-            padding-top:5%;
-        }
-        &_img{
-            max-width: 100%;
-        }
+    &_img {
+      max-width: 100%;
     }
+  }
 }
-  
 
-@media (max-width: 767.98px) { 
-    .block_wr{
-        background-color: $block_bg;
-        box-shadow: 0 0 10px $box_shadow;
-        border-radius: 10px;
+@media (max-width: 767.98px) {
+  .block_wr {
+    background-color: $block_bg;
+    box-shadow: 0 0 10px $box_shadow;
+    border-radius: 10px;
+  }
+  .block_rooms {
+    flex-wrap: wrap;
+    &_text_content {
+      font-size: 22px;
+      width: 100%;
+      padding-top: 5%;
     }
-    .block_rooms{
-        flex-wrap:wrap;
-        &_text_content{
-            font-size: 22px;
-            width: 100%;
-            padding-top:5%;
-        }
-    &_img{
-        max-width: 100%;
-        }
+    &_img {
+      max-width: 100%;
     }
- }
+  }
+}
 
-@media (max-width: 575.98px) { 
-     .block_wr{
-        background-color: $block_bg;
-        box-shadow: 0 0 10px $box_shadow;
-        border-radius: 10px;
+@media (max-width: 575.98px) {
+  .block_wr {
+    background-color: $block_bg;
+    box-shadow: 0 0 10px $box_shadow;
+    border-radius: 10px;
+  }
+  .block_rooms {
+    flex-wrap: wrap;
+    margin: 0 10%;
+    &_text_content {
+      font-size: 22px;
+      width: 100%;
+      padding-top: 5%;
     }
-    .block_rooms{
-        flex-wrap:wrap;
-        margin:0 10%;
-        &_text_content{
-            font-size: 22px;
-            width: 100%;
-            padding-top:5%;
-        }
-    &_img{
-        max-width: 100%;
-        max-height: 400px;
-        }
+    &_img {
+      max-width: 100%;
+      max-height: 400px;
     }
-    .block_wr_prices{
-     margin-top: 10%;
-    }
+  }
+  .block_wr_prices {
+    margin-top: 10%;
+  }
 
-    .br_prices{
-        display: initial;
-      }
+  .br_prices {
+    display: initial;
+  }
 
-    .carousel_button{
-        height: 30px;
-        width:55%;
-        margin-top: 1%;
-    }
+  .carousel_button {
+    height: 30px;
+    width: 55%;
+    margin-top: 1%;
+  }
 
-    .changeroom_left{
-        left:2%;
-        margin-top: 50%;
-        position: absolute;
-        width: 30px;
-        height: 50px;
-    }
-    
-    .changeroom_right {
-        position: absolute;
-        right:2%;
-        margin-top: 50%;
-        width: 30px;
-        height: 50px;
-    }
+  .changeroom_left {
+    left: 2%;
+    margin-top: 50%;
+    position: absolute;
+    width: 30px;
+    height: 50px;
+  }
 
-    .carousel_title{
-        color:black;
-    }
- }
+  .changeroom_right {
+    position: absolute;
+    right: 2%;
+    margin-top: 50%;
+    width: 30px;
+    height: 50px;
+  }
+
+  .carousel_title {
+    color: black;
+  }
+}

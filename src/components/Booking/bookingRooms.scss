@@ -1,146 +1,186 @@
-@import  '../../style/variables';
+@import "../../style/variables";
 
-    fieldset{
-        padding:30% 0 0 0 ;
-    }
+fieldset {
+  padding: 30% 0 0 0;
+}
 
-    .radioButton{
-        margin-right: 5%;
-    }
+.radioButton {
+  margin-right: 5%;
+}
 
-    .book_block{
-        display: flex;
-        justify-content: center;
-        background: url('../../resources/img/booking_img_bg.jpg') rgb(255, 255, 255);
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-blend-mode: multiply;
-        margin-bottom: 100px;
-        height: 120vh;
-        overflow-y: hidden;
-        align-items: center;
-        margin: 0;
-        &_textcontent{
-            padding-right: 10%;            
-        }
-    }
+.book_block {
+  display: flex;
+  justify-content: center;
+  background: rgb(255, 255, 255) url("../../resources/img/booking_img_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  margin-bottom: 100px;
+  height: 120vh;
+  overflow-y: hidden;
+  align-items: center;
+  margin: 0;
+  &_textcontent {
+    padding-right: 10%;
+  }
+}
 
-    .form-control{
-        font-size: 100px;
-    }
+.form-control {
+  font-size: 100px;
+}
 
-    h4{ 
-        color: $font;
-    }
-    .textcontent_text{
-        color:$font;
-        font-size: 1.7vw;
-    }
+h4 {
+  color: $font;
+}
+.textcontent_text {
+  color: $font;
+  font-size: 1.7vw;
+}
 
-    .textcontent_title{
-        font-size: 2vw;
-    }
+.textcontent_title {
+  font-size: 2vw;
+}
 
-    label{
-        color:$font;
-        font-size: 1.5vw;
-        
-    }
+.btn-groups {
+  width: 100%;
+}
+.wrapper {
+  width: 50%;
+}
 
-    .book_block_form{
-        padding-top: 5%;
-    }
+.wr_prices_text {
+  width: 50%;
+}
 
-    button.book_block_btn{
-        background: $orange;
-        width: 70%;
-        margin: 10% 30px;
-        border:1px solid white;
-        border-radius: 10px ;
-        color: white;
-        &:hover{
-            content: '';
-            color:black;
-        }
+.booking_button {
+  background: $orange;
+  width: fit-content;
+  padding: 2%;
+  margin: 5% 5%;
+  min-height: 50px;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.6em;
+
+  &:hover {
+    box-shadow: -5px -5px lighten($orange_invis, 10%);
+    cursor: pointer;
+    transition: 0.2s;
+
+    &::before {
+      border: 0px;
     }
+  }
+}
+
+label {
+  color: $font;
+  font-size: 1.5vw;
+}
+
+.book_block_form {
+  padding-top: 5%;
+}
+
+button.book_block_btn {
+  background: $orange;
+  width: 70%;
+  margin: 10% 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 1em;
+  &:hover {
+    content: "";
+    color: black;
+    font-size: 1.1em;
+  }
+}
 
 @media (max-width: 700px) {
+  .book_block_form {
+    padding-top: 0;
+  }
 
-    .book_block_form{
-        padding-top: 0;
-    }
-
-    .book_block{
-        flex-direction: row;
-        align-items:center;
-        justify-content: center;
-        flex-wrap: wrap;
-        background: #D6F1FC;
-        box-shadow: 0 0 10px $box_shadow;
-        border-radius: 10px;
-        height: fit-content;
-        &_form{             
-            width: 100%;
-            &label{
-                text-align: center;
-                padding-bottom: 10%;
-            }
-        }    
-        &_textcontent{
-            padding: 0%;
-            color:black; 
-        }
-    }
-
-    .textcontent_title{
-        padding-top:10%;
-        font-size: 1.4em;
-    }
-
-    h4{
-        text-align: center; 
-        padding-bottom: 10px;
-        color:black;
-    }
-
-    .textcontent_text, label{
-        color:black;
-        font-size: large;
-    }
-
-    form{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .book_block_btn{
-        margin:10px auto;
-        justify-self:center;
-        width:60%;
-    } 
-
-    button{
-        background: rgb(95, 121, 237);    
-    }
-    .textcontent{
-        padding:0;
-        margin:0;
-        height: 0;   
-        &_text{
-            display:none;
-            color: black;
-        }
-    }
-
-    label{
+  .book_block {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #d6f1fc;
+    box-shadow: 0 0 10px $box_shadow;
+    border-radius: 10px;
+    height: fit-content;
+    &_form {
+      width: 100%;
+      &label {
         text-align: center;
-        width:100%;
-        padding: 0 5%;
-    }   
-    
-    fieldset{
-        width: 100%;
+        padding-bottom: 10%;
+      }
     }
+    &_textcontent {
+      padding: 0%;
+      color: black;
+    }
+  }
 
+  .textcontent_title {
+    padding-top: 10%;
+    font-size: 1.4em;
+  }
+
+  h4 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: black;
+  }
+
+  .textcontent_text,
+  label {
+    color: black;
+    font-size: large;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .book_block_btn {
+    margin: 10px auto;
+    justify-self: center;
+    width: 60%;
+  }
+
+  button {
+    background: rgb(95, 121, 237);
+  }
+  .textcontent {
+    padding: 0;
+    margin: 0;
+    height: 0;
+    &_text {
+      display: none;
+      color: black;
     }
+  }
+
+  label {
+    text-align: center;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  fieldset {
+    width: 100%;
+  }
+
+  .radioButton input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
